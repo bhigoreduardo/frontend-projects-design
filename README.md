@@ -1,3 +1,3 @@
 # frontend-projects-design
 
-Repositório com projetos Front-End com use de diferentes bibliotecas e frameworks.
+Repositório com projetos Front-End com uso de diferentes bibliotecas e frameworks.
