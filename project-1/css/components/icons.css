@@ -1,0 +1,32 @@
+.icons-menu .content {
+  margin-top: 72px;
+}
+
+.icons-menu .content .icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 24px;
+}
+
+.icons-menu .content .icons-container .icon {
+  text-align: center;
+  padding: 20px;
+}
+
+.icons-menu .content .icons-container .icon:hover {
+  transition: 0.2s ease-in;
+  background-color: var(--color-white-040);
+  border-radius: var(--border-radius-lg);
+}
+
+.icons-menu .content .icons-container .icon img {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+.icons-menu .content .icons-container .icon h6 {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white-700);
+}

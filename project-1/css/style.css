@@ -1,0 +1,29 @@
+/* RESET COMPONENETS */
+@import url(./default/reset.css);
+
+/* HELPERS COMPONENTS */
+@import url(./default/helpers.css);
+
+/* HEADER COMPONENT */
+@import url(./components/header.css);
+
+/* BANNER COMPONENT */
+@import url(./components/banner.css);
+
+/* ICONS-MENU COMPONENT */
+@import url(./components/icons.css);
+
+/* OFFER COMPONENT */
+@import url(./components/offer.css);
+
+/* NEWSLETTER COMPONENT */
+@import url(./components/newsletter.css);
+
+/* APP DOWNLOAD COMPONENT */
+@import url(./components/app.css);
+
+/* BLOG COMPONENT */
+@import url(./components/blog.css);
+
+/* FOOTER COMPONENT */
+@import url(./components/footer.css);

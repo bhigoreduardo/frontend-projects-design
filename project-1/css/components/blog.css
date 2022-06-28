@@ -1,0 +1,21 @@
+.blog {
+  margin-top: 72px;
+}
+
+.blog .content .card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.blog .content .card-container .card-blog {
+  flex: 1 1 416px;
+}
+
+@media screen and (max-width: 530px) {
+  .blog .content .headline {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Custom JS File Link -->
+    <script src="./js/main.js" defer></script>
+    <title>Alpha 11</title>
+
+    <!-- OG Tags Site -->
+    <meta property="og:title" content="Alpha 11 - Engenharia e Soluções" />
+    <meta property="og:site" content="" />
+    <meta property="og:site_name" content="Alpha 11" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Projetos de Engenharia e Tecnologia" />
+
+    <!-- Tags Google -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Projetos de Engenharia e Tecnologia" />
+    <meta name="keywords" content="Engenharia Mecânica, Tecnologia, Heathtech, Programação, Robótica" />
+    <meta name="copyright" content="Desenvolvido por Higor Eduardo" />
+    <meta name="author" content="Desenvolvido por Higor Eduardo" />
+
+    <!-- OG Tags Twitter -->
+    <meta property="twitter:title" content="Alpha 11 - Engenharia e Soluções" />
+    <meta property="twitter:description" content="Projetos de Engenharia e Tecnologia" />
+    <meta property="twitter:image" content="" />
+
+    <!-- Search Console Google -->
+    <meta name="google-site-verification" content="" />
+
+    <!-- Hotjar Tracking Code for domain.com.br -->
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="header">
+      <section class="container">
+        <a title="Alpha 11" href="/" class="logo"
+          ><svg width="82" height="15" viewBox="0 0 82 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.04 12.7H5.04L4.28 15H0.16L5.3 0.899999H9.82L14.94 15H10.8L10.04 12.7ZM9.06 9.7L7.54 5.14L6.04 9.7H9.06ZM20.1377 12H24.5177V15H16.2177V0.899999H20.1377V12ZM37.1819 5.6C37.1819 6.45333 36.9819 7.23333 36.5819 7.94C36.1952 8.63333 35.6019 9.19333 34.8019 9.62C34.0152 10.0333 33.0485 10.24 31.9019 10.24H29.9619V15H26.0419V0.899999H31.9019C33.0352 0.899999 33.9952 1.1 34.7819 1.5C35.5819 1.9 36.1819 2.45333 36.5819 3.16C36.9819 3.86667 37.1819 4.68 37.1819 5.6ZM31.5219 7.12C32.6285 7.12 33.1819 6.61333 33.1819 5.6C33.1819 4.57333 32.6285 4.06 31.5219 4.06H29.9619V7.12H31.5219ZM51.3767 0.899999V15H47.4567V9.34H42.6767V15H38.7567V0.899999H42.6767V6.2H47.4567V0.899999H51.3767ZM62.54 12.7H57.54L56.78 15H52.66L57.8 0.899999H62.32L67.44 15H63.3L62.54 12.7ZM61.56 9.7L60.04 5.14L58.54 9.7H61.56ZM67.9577 4.06V0.38H74.1177V15H70.0177V4.06H67.9577ZM75.692 4.06V0.38H81.852V15H77.752V4.06H75.692Z"
+              fill="url(#paint0_linear_14_2821)"
+            />
+            <defs>
+              <linearGradient id="paint0_linear_14_2821" x1="42" y1="-7" x2="42" y2="23" gradientUnits="userSpaceOnUse">
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="white" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </a>
+
+        <div class="icons-container">
+          <i id="icon-bars" class="fas fa-bars button-sm button-none"></i>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <a class="button-sm button-none button-bold" href="/novos">Novos</a>
+          <a class="button-sm button-none button-bold" href="/alugados">Alugados</a>
+          <a class="button-sm button-none button-bold" href="/comprar">Comprar</a>
+          <a class="button-sm button-none button-bold" href="/testar">Testar</a>
+          <a class="button-sm button-none button-bold" href="/novidades">Novidades e Reviews</a>
+        </nav>
+
+        <div class="buttons-container">
+          <a class="button-sm button-none button-bold" href="/conta"><i class="fas fa-user"></i>Entrar</a>
+          <a id="button-sale" class="button-sm button-primary button-bold" href="/vender"><i class="fas fa-plus"></i>Vender</a>
+        </div>
+      </section>
+    </header>
+    <!-- / HEADER -->
+
+    <main>
+      <!-- BANNER -->
+      <section class="banner">
+        <div class="description container">
+          <div class="content">
+            <h1>Compre e alugue com facilidade.</h1>
+            <p>A Alpha11 é uma empresa inovadora para a indústria tecnológica com a criação de diversas soluções empresariais e que fidelizam seus clientes e parceiros.</p>
+          </div>
+
+          <img title="Alpha Pro UVC" src="./assets/img/image-banner.png" alt="Alhpa Pro UVC" />
+
+          <div class="search-bar container">
+            <div class="search-buttons">
+              <span>
+                <input type="radio" name="condition" id="new" checked />
+                <label class="button-base button-dark button-regular" for="new">Novo</label>
+              </span>
+
+              <span>
+                <input type="radio" name="condition" id="rented" />
+                <label class="button-base button-dark button-regular" for="rented">Alugado</label>
+              </span>
+            </div>
+
+            <div class="search-inputs">
+              <span class="input-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquiser por..." />
+              </span>
+
+              <span class="input-box">
+                <i class="far fa-star"></i>
+                <select>
+                  <option value="categoria" selected disabled>Categoria</option>
+                </select>
+              </span>
+
+              <span class="input-box">
+                <i class="fas fa-list"></i>
+                <select>
+                  <option value="modelo" selected disabled>Modelo</option>
+                </select>
+              </span>
+
+              <span class="input-box">
+                <i class="far fa-lightbulb"></i>
+                <select>
+                  <option value="tipo" selected disabled>Tipo</option>
+                </select>
+              </span>
+
+              <span class="input-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <select>
+                  <option value="local" selected disabled>Local</option>
+                </select>
+              </span>
+
+              <button type="submit" class="button-base button-primary button-bold">Pesquisar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / BANNER -->
+
+      <!-- ICONS MENU -->
+      <section class="icons-menu">
+        <div class="content container">
+          <div class="headline">
+            <h3>Categorias</h3>
+
+            <div class="buttons-container">
+              <a class="button-base button-none" href="/">Ver todos<i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="icons-container">
+            <a href="/" class="icon">
+              <img title="Hospitais" src="./assets/icons/hospital.svg" alt="Hospitais" />
+              <h6>Hospitais</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Escolas" src="./assets/icons/school.svg" alt="Escolas" />
+              <h6>Escolas</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Residências" src="./assets/icons/home.svg" alt="Residências" />
+              <h6>Residências</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Comercial" src="./assets/icons/comercial.svg" alt="Comercial" />
+              <h6>Comercial</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Templos Religiosos" src="./assets/icons/temple.svg" alt="Templos Religiosos" />
+              <h6>Templos Religiosos</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Academias" src="./assets/icons/gym.svg" alt="Academias" />
+              <h6>Academias</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Negócios locais" src="./assets/icons/business.svg" alt="Negócios locais" />
+              <h6>Negócios locais</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Fábricas" src="./assets/icons/factory.svg" alt="Fábricas" />
+              <h6>Fábricas</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Órgãos Públicos" src="./assets/icons/governamental.svg" alt="Órgãos Públicos" />
+              <h6>Órgãos Públicos</h6>
+            </a>
+
+            <a href="/" class="icon">
+              <img title="Construção civil" src="./assets/icons/build.svg" alt="Construção civil" />
+              <h6>Construção civil</h6>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- / ICONS MENU -->
+
+      <!-- OFFER -->
+      <section class="offer">
+        <div class="content container">
+          <div class="headline">
+            <h3>Ofertas</h3>
+
+            <div class="buttons-container">
+              <a href="/" class="button-base button-none">Ver todas ofertas<i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="cards-container">
+            <article class="card">
+              <div class="wrapper">
+                <div class="wrapper-image">
+                  <img title="Produto 1" src="./assets/img/products/image-1.png" alt="Produto 1" />
+                </div>
+
+                <span class="label label-info">Alugado</span>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <div class="info-container">
+                <div class="content">
+                  <div class="data">
+                    <span>2020</span>
+                    <div class="checkbox">
+                      <label title="Compare" class="chk">
+                        Compare
+                        <input type="checkbox" name="compare" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <h6>Esterilizador UVC Alpha Utilitário</h6>
+                  <p>$25,880</p>
+                  <span class="none"><i class="fa fa-map-marker-alt"></i>Rondonópolis</span>
+                </div>
+
+                <div class="icons-container">
+                  <div class="icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>3m²</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Manual</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fas fa-car-battery"></i>
+                    <span>Tomada</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="wrapper">
+                <div class="wrapper-image">
+                  <img title="Produto 1" src="./assets/img/products/image-2.png" alt="Produto 1" />
+                </div>
+
+                <span class="label label-info">Alugado</span>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <div class="info-container">
+                <div class="content">
+                  <div class="data">
+                    <span>2020</span>
+                    <div class="checkbox">
+                      <label title="Compare" class="chk">
+                        Compare
+                        <input type="checkbox" name="compare" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <h6>Esterilizador UVC Alpha Utilitário</h6>
+                  <p>$25,880</p>
+                  <span class="none"><i class="fa fa-map-marker-alt"></i>Rondonópolis</span>
+                </div>
+
+                <div class="icons-container">
+                  <div class="icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>3m²</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Manual</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fas fa-car-battery"></i>
+                    <span>Tomada</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="wrapper">
+                <div class="wrapper-image">
+                  <img title="Produto 1" src="./assets/img/products/image-3.png" alt="Produto 1" />
+                </div>
+
+                <span class="label label-warning">Alugado</span>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+
+              <div class="info-container">
+                <div class="content">
+                  <div class="data">
+                    <span>2020</span>
+                    <div class="checkbox">
+                      <label title="Compare" class="chk">
+                        Compare
+                        <input type="checkbox" name="compare" />
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <h6>Esterilizador UVC Alpha Utilitário</h6>
+                  <p>$25,880</p>
+                  <span class="none"><i class="fa fa-map-marker-alt"></i>Rondonópolis</span>
+                </div>
+
+                <div class="icons-container">
+                  <div class="icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>3m²</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Manual</span>
+                  </div>
+
+                  <div class="icon">
+                    <i class="fas fa-car-battery"></i>
+                    <span>Tomada</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- / OFFER -->
+
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <div class="container">
+          <div class="content">
+            <div class="description">
+              <h2>Assine nossa Newsletter</h2>
+              <span>Receba notíciais e ofertas.</span>
+
+              <form>
+                <button class="button-base button-primary button-bold">Cadastrar</button>
+                <input type="email" placeholder="Digite seu e-mail" />
+              </form>
+            </div>
+
+            <img title="Newsletter" src="./assets/img/image-newsletter.png" alt="Newsletter" />
+          </div>
+        </div>
+      </section>
+      <!-- / NEWSLETTER -->
+
+      <!-- APP DOWNLOAD -->
+      <section class="app">
+        <div class="container">
+          <div class="content">
+            <div class="information">
+              <h2>Baixe o nosso app</h2>
+              <p>Baixe o App Alpha11 e junte-se à comunidade de entusiastas por tecnologia. Tenha o controle em suas mãos quando sair do computador com nosso aplicativo para Android e iOS!</p>
+              <div class="icons-container">
+                <div class="apple">
+                  <i class="fab fa-apple"></i>
+
+                  <div class="description">
+                    <span>Dispovível em</span>
+                    <span class="brand">App Store</span>
+                  </div>
+                </div>
+
+                <div class="android">
+                  <i class="fab fa-google-play"></i>
+
+                  <div class="descrition">
+                    <span>Disponível em</span>
+                    <span class="brand">Google Play</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="image">
+              <img title="Aplicativo" src="./assets/img/image-app.png" alt="Aplicativo" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / APP DOWNLOAD -->
+
+      <!-- BLOG -->
+      <section class="blog">
+        <div class="container">
+          <div class="content">
+            <div class="headline">
+              <h3>Últimas novidades</h3>
+
+              <div class="buttons-container">
+                <a href="/" class="button-base button-none">Visitar nosso blog<i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <article class="card-blog">
+                <img class="cover" title="Blog" src="./assets/img/blog/image-1.png" alt="Blog" />
+                <h4>Dicas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, corporis possimus nemo nesciunt fuga eveniet non, quo esse quaerat enim eligendi. Doloribus unde fugiat voluptas...</p>
+
+                <div class="author">
+                  <img title="Usuário" src="./assets/img/user/image.png" alt="Usuário" />
+
+                  <div class="info">
+                    <h5>John Doe</h5>
+                    <span><i class="fas fa-calendar"></i>24 de Nov</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-blog">
+                <img class="cover" title="Blog" src="./assets/img/blog/image-1.png" alt="Blog" />
+                <h4>Dicas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, corporis possimus nemo nesciunt fuga eveniet non, quo esse quaerat enim eligendi. Doloribus unde fugiat voluptas...</p>
+
+                <div class="author">
+                  <img title="Usuário" src="./assets/img/user/image.png" alt="Usuário" />
+
+                  <div class="info">
+                    <h5>John Doe</h5>
+                    <span><i class="fas fa-calendar"></i>24 de Nov</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-blog">
+                <img class="cover" title="Blog" src="./assets/img/blog/image-1.png" alt="Blog" />
+                <h4>Dicas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, corporis possimus nemo nesciunt fuga eveniet non, quo esse quaerat enim eligendi. Doloribus unde fugiat voluptas...</p>
+
+                <div class="author">
+                  <img title="Usuário" src="./assets/img/user/image.png" alt="Usuário" />
+
+                  <div class="info">
+                    <h5>John Doe</h5>
+                    <span><i class="fas fa-calendar"></i>24 de Nov</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / BLOG -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          <div class="brand">
+            <a title="Alpha 11" href="/" class="logo"
+              ><svg width="82" height="15" viewBox="0 0 82 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.04 12.7H5.04L4.28 15H0.16L5.3 0.899999H9.82L14.94 15H10.8L10.04 12.7ZM9.06 9.7L7.54 5.14L6.04 9.7H9.06ZM20.1377 12H24.5177V15H16.2177V0.899999H20.1377V12ZM37.1819 5.6C37.1819 6.45333 36.9819 7.23333 36.5819 7.94C36.1952 8.63333 35.6019 9.19333 34.8019 9.62C34.0152 10.0333 33.0485 10.24 31.9019 10.24H29.9619V15H26.0419V0.899999H31.9019C33.0352 0.899999 33.9952 1.1 34.7819 1.5C35.5819 1.9 36.1819 2.45333 36.5819 3.16C36.9819 3.86667 37.1819 4.68 37.1819 5.6ZM31.5219 7.12C32.6285 7.12 33.1819 6.61333 33.1819 5.6C33.1819 4.57333 32.6285 4.06 31.5219 4.06H29.9619V7.12H31.5219ZM51.3767 0.899999V15H47.4567V9.34H42.6767V15H38.7567V0.899999H42.6767V6.2H47.4567V0.899999H51.3767ZM62.54 12.7H57.54L56.78 15H52.66L57.8 0.899999H62.32L67.44 15H63.3L62.54 12.7ZM61.56 9.7L60.04 5.14L58.54 9.7H61.56ZM67.9577 4.06V0.38H74.1177V15H70.0177V4.06H67.9577ZM75.692 4.06V0.38H81.852V15H77.752V4.06H75.692Z"
+                  fill="url(#paint0_linear_14_2821)"
+                />
+                <defs>
+                  <linearGradient id="paint0_linear_14_2821" x1="42" y1="-7" x2="42" y2="23" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+
+            <div class="location">
+              <span><i class="fas fa-globe"></i>pt-BR<i class="fas fa-chevron-down"></i></span>
+              <span><i class="fa fa-map-marker-alt"></i>Mato Grosso<i class="fas fa-chevron-down"></i></span>
+            </div>
+          </div>
+
+          <div class="box-container">
+            <div class="box">
+              <h5>Cadastre-se na newsletter</h5>
+              <span>Não perca nenhuma oferta relevante!</span>
+
+              <form>
+                <label for="newsletter-footer"><i class="fas fa-envelope"></i></label>
+                <input type="email" placeholder="Informe seu email" id="newsletter-footer" />
+                <button class="button-sm button-primary"><i class="fab fa-telegram-plane"></i></button>
+              </form>
+            </div>
+
+            <div class="box">
+              <h6>Comprar ou Algugar</h6>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+            </div>
+
+            <div class="box">
+              <h6>Sobre</h6>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+            </div>
+
+            <div class="box">
+              <h6>Perfil</h6>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+              <span>Lorem, ipsum dolor.</span>
+            </div>
+
+            <div class="box">
+              <a href="tel:+55(11) 9999-9999"><i class="fas fa-mobile"></i>(11) 9999-9999</a>
+              <a href="mailto:contato@alpha11.com.br"><i class="fas fa-envelope"></i>contato@alpha11.com.br</a>
+
+              <div class="social-icons">
+                <a href="/"><i class="fab fa-facebook-f"></i></a>
+                <a href="/"><i class="fab fa-twitter"></i></a>
+                <a href="/"><i class="fab fa-linkedin"></i></a>
+                <a href="/"><i class="fab fa-telegram-plane"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="copy">
+            <span>Copyright © Alpha11 Ltda - 2022 | Todos os direitos reservados.</span>
+
+            <div class="links">
+              <a href="/">Termos de uso</a>
+              <a href="/">Política de privacidade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- / FOOTER -->
+  </body>
+</html>
