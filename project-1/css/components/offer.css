@@ -26,7 +26,15 @@
 }
 
 @media screen and (max-width: 1145px) {
-  .offer .content .cards-container,
+  .offer .content .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .offer .content .cards-container .card {
+    flex: 1 1 400px;
+  }
+
   .offer .content .cards-container > .card:nth-child(n + 2) {
     max-height: none;
     grid-template-columns: 100%;
@@ -37,5 +45,11 @@
     height: auto;
     left: 0;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .offer .content .cards-container .card {
+    flex: 1 1 100%;
   }
 }
