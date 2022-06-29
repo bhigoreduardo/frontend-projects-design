@@ -16,6 +16,9 @@
 /* OFFER COMPONENT */
 @import url(./components/offer.css);
 
+/* ABOUT COMPONENT */
+@import url(./components/about.css);
+
 /* RELEASES COMPONENT */
 @import url(./components/releases.css);
 
