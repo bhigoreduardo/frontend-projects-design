@@ -1,0 +1,30 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+
+  .content {
+    p {
+      font-size: 1.4rem;
+      color: $color-black;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    grid-template-columns: 100%;
+
+    img {
+      height: 30rem;
+    }
+  }
+}

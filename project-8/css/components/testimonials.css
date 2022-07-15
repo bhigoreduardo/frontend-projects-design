@@ -1,0 +1,65 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BOX-SHADOW */
+/* TESTIMONIALS */
+.testimonials {
+  background: url(../../assets/img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonials h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials p {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.testimonials .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.testimonials .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 4rem;
+  text-align: center;
+}
+
+.testimonials .box-container .box img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.testimonials .box-container .box p {
+  color: #111;
+}
+
+.testimonials .box-container .box span {
+  font-size: 1.8rem;
+  color: #111;
+}
+/*# sourceMappingURL=testimonials.css.map */

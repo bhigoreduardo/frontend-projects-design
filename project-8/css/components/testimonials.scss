@@ -1,0 +1,56 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* TESTIMONIALS */
+.testimonials {
+  background: url(../../assets/img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h2 {
+    text-align: center;
+    color: $color-white;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: $color-white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80rem;
+    width: 100%;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .box {
+      flex: 1 1 40rem;
+      margin: 0 auto;
+      background-color: $color-white;
+      padding: 4rem;
+      text-align: center;
+
+      img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        color: $color-black;
+      }
+
+      span {
+        font-size: 1.8rem;
+        color: $color-black;
+      }
+    }
+  }
+}

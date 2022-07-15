@@ -1,0 +1,38 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BOX-SHADOW */
+/* ABOUT */
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about .content p {
+  font-size: 1.4rem;
+  color: #111;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .about img {
+    height: 30rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

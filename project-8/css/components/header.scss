@@ -1,0 +1,115 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 3rem 5%;
+  transition: 0.3s linear;
+
+  &.active {
+    padding: 1rem 5%;
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+
+    .logo {
+      color: $color-black;
+    }
+
+    .navbar a {
+      color: $color-black;
+
+      &:hover{
+        color: $color-white;
+      }
+    }
+  }
+
+  .logo {
+    font-size: 3rem;
+    color: $color-white;
+    font-weight: 700;
+
+    span {
+      color: $color-red;
+    }
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+    color: $color-white;
+    padding: 0.5rem;
+    transition: 0.3s linear;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-red;
+    }
+
+    &:not(first-child) {
+      margin-left: 1rem;
+    }
+  }
+
+  #icon-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &.active {
+      #icon-menu {
+        filter: invert(1);
+      }
+    }
+
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 25rem;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      padding: 0.5rem;
+      transition: 0.3s linear;
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      a {
+        display: block;
+        margin-left: none !important;
+        background-color: $color-white;
+        color: $color-black;
+        border: 0.1rem solid rgba(0, 0, 0, 0.5);
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    #icon-menu {
+      display: inline-block;
+      padding: 2rem;
+      background-image: url(../../assets/img/menu.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 3rem;
+      transition: 0.3s linear;
+
+      &.active {
+        background-image: url(../../assets/img/close.png);
+      }
+    }
+  }
+}

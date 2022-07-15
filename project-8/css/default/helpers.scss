@@ -1,0 +1,37 @@
+/* VARIABLES */
+@import "./vars.scss";
+
+/* SECTION COMPONENTS */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: $color-black;
+  margin-bottom: 3rem;
+
+  span {
+    color: $color-red;
+  }
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  color: $color-white;
+  background-color: $color-red;
+  transition: 0.3s linear;
+  border: 0.1rem solid transparent !important;
+
+  &:hover {
+    letter-spacing: 0.1rem;
+    background-color: $color-white;
+    color: $color-red;
+    border-color: $color-red !important;
+  }
+}

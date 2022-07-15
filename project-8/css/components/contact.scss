@@ -1,0 +1,39 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* CONTACT */
+.contact {
+  background: url(../../assets/img/bg-3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-black;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 90rem;
+  }
+
+  form {
+    width: 100%;
+    max-width: 90rem;
+    span {
+      font-size: 1.4rem;
+      color: $color-black;
+      display: block;
+      margin-bottom: 2rem;
+    }
+
+    .input-box {
+      font-size: 1.4rem;
+      color: $color-black;
+      padding: 0.5rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    }
+  }
+}

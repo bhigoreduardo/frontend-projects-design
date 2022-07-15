@@ -1,0 +1,51 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BOX-SHADOW */
+/* CHIEF */
+.chief h2 {
+  text-align: center;
+}
+
+.chief p {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  color: #111;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.chief .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 100rem;
+  margin: auto;
+}
+
+.chief .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+}
+
+.chief .box-container .box span {
+  font-size: 1.8rem;
+  color: #111;
+}
+/*# sourceMappingURL=chief.css.map */

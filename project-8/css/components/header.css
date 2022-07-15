@@ -1,0 +1,124 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BOX-SHADOW */
+/* HEADER */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 3rem 5%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.header.active {
+  padding: 1rem 5%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.header.active .logo {
+  color: #111;
+}
+
+.header.active .navbar a {
+  color: #111;
+}
+
+.header.active .navbar a:hover {
+  color: #fff;
+}
+
+.header .logo {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.header .logo span {
+  color: #ff0157;
+}
+
+.header .navbar a {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 0.5rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.header .navbar a:hover {
+  background-color: #ff0157;
+}
+
+.header .navbar a:not(first-child) {
+  margin-left: 1rem;
+}
+
+.header #icon-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header.active #icon-menu {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 25rem;
+    text-align: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    padding: 0.5rem;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    margin-left: none !important;
+    background-color: #fff;
+    color: #111;
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  }
+  .header .navbar a:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  .header #icon-menu {
+    display: inline-block;
+    padding: 2rem;
+    background-image: url(../../assets/img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3rem;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  .header #icon-menu.active {
+    background-image: url(../../assets/img/close.png);
+  }
+}
+/*# sourceMappingURL=header.css.map */

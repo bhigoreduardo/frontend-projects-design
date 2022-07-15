@@ -1,0 +1,40 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* CHIEF */
+.chief {
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    color: $color-black;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+
+    .box {
+      flex: 1 1 15rem;
+
+      span {
+        font-size: 1.8rem;
+        color: $color-black;
+      }
+    }
+  }
+}

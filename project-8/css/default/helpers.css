@@ -1,0 +1,42 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BOX-SHADOW */
+/* SECTION COMPONENTS */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #111;
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  color: #ff0157;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #ff0157;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  border: 0.1rem solid transparent !important;
+}
+
+.button:hover {
+  letter-spacing: 0.1rem;
+  background-color: #fff;
+  color: #ff0157;
+  border-color: #ff0157 !important;
+}
+/*# sourceMappingURL=helpers.css.map */

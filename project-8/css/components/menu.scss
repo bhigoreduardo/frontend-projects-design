@@ -1,0 +1,51 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* MENU */
+.menu {
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    font-size: 1.4rem;
+    color: $color-black;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .box {
+      padding: 2rem;
+      box-shadow: $box-shadow;
+      background-color: $color-white;
+
+      img {
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
