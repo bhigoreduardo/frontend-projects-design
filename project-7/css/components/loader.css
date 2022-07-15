@@ -1,0 +1,17 @@
+#loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+#loader.fade-out {
+  transition: 1s linear;
+  top: -100%;
+  opacity: 0;
+}

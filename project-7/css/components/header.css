@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  z-index: 2;
+}
+
+.header .logo {
+  font-size: 2rem;
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.header .logo .fa-utensils {
+  color: var(--color-green);
+}
+
+.header .navbar a {
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  color: var(--color-medium);
+  border-radius: 0.5rem;
+  transition: 0.5s ease;
+}
+
+.header .navbar a:hover {
+  color: #fff;
+  background-color: var(--color-green);
+}
+
+.header .icons i,
+.header .icons a {
+  font-size: 1.6rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  margin: 0 0.2rem;
+  text-align: center;
+  color: var(--color-black);
+  background-color: var(--color-clear);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.header .icons i:hover,
+.header .icons a:hover {
+  transform: rotate(360deg);
+  color: #fff;
+  background-color: var(--color-green);
+}
+
+.header .icons #menu-bars {
+  display: none;
+}
+
+.header #search-form {
+  position: absolute;
+  top: 120%;
+  right: -100%;
+  transition: .5s linear;
+}
+
+.header #search-form.active {
+  right: 5%;
+}
+
+.header #search-form input {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--color-black);
+  padding: 0.2rem 0.5rem;
+  margin-right: 1rem;
+}
+
+.header #search-form input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.header #search-form label {
+  font-size: 1.6rem;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.header #search-form label:hover {
+  color: var(--color-green);
+}
+
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 0.5rem;
+  }
+
+  .header .icons #menu-bars {
+    display: inline-block;
+  }
+}

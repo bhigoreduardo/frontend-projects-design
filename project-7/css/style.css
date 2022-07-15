@@ -1,0 +1,32 @@
+/* RESET COMPONENTS CSS */
+@import url(./default/reset.css);
+
+/* HELPERS COMPONENTS CSS */
+@import url(./default/helpers.css);
+
+/* HEADER COMPONENT */
+@import url(./components/header.css);
+
+/* HOME COMPONENT */
+@import url(./components/home.css);
+
+/* DISHES COMPONENT */
+@import url(./components/dishes.css);
+
+/* ABOUT COMPONENT */
+@import url(./components/about.css);
+
+/* MENU COMPONENT */
+@import url(./components/menu.css);
+
+/* TESTIMONIALS COMPONENT */
+@import url(./components/testimonials.css);
+
+/* ORDER COMPONENT */
+@import url(./components/order.css);
+
+/* FOOTER COMPONENT */
+@import url(./components/footer.css);
+
+/* LOADER COMPONENT */
+@import url(./components/loader.css);

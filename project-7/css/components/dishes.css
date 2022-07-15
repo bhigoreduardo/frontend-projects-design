@@ -1,0 +1,96 @@
+.dishes span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-green);
+  text-align: center;
+}
+
+.dishes h2 {
+  font-size: 2.4rem;
+  color: var(--color-black);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dishes .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.dishes .card-container .card {
+  position: relative;
+  background-color: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.dishes .card-container .card .fa-eye,
+.dishes .card-container .card .fa-heart {
+  top: 2rem;
+  position: absolute;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: var(--color-black);
+  background-color: var(--color-clear);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.dishes .card-container .card .fa-eye {
+  left: -10rem;
+}
+
+.dishes .card-container .card .fa-heart {
+  right: -10rem;
+}
+
+.dishes .card-container .card:hover .fa-eye {
+  left: 2rem;
+}
+
+.dishes .card-container .card:hover .fa-heart {
+  right: 2rem;
+}
+
+.dishes .card-container .card .fa-eye:hover,
+.dishes .card-container .card .fa-heart:hover {
+  color: #fff;
+  background-color: var(--color-green);
+}
+
+.dishes .card-container .card h3 {
+  font-size: 1.6rem;
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+.dishes .card-container .card .stars i {
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: 1rem;
+}
+
+.dishes .card-container .card small {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-green);
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 1270px) {
+  .dishes .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  }
+}
