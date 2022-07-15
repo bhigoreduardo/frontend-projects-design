@@ -1,0 +1,129 @@
+/* RESET COMPONENETS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* GRID TEMPLATE */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  resize: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* BLOG */
+.blog .slide .card {
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.blog .slide .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog .slide .card img {
+  height: 25rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.blog .slide .card .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #10221b;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -2rem;
+}
+
+.blog .slide .card .head i {
+  font-size: 1.2rem;
+  color: #219150;
+  margin-right: 0.5rem;
+}
+
+.blog .slide .card .head span {
+  font-size: 1.2rem;
+  color: #fff;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.blog .slide .card .head span:hover {
+  color: #219150;
+}
+
+.blog .slide .card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #10221b;
+  margin-bottom: 0.5rem;
+}
+
+.blog .slide .card p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #10221b;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=blog.css.map */

@@ -1,0 +1,116 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* GRID TEMPLATE */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  resize: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+  background-color: #eee;
+}
+
+.subscribe .content {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.subscribe .content p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #10221b;
+  margin-bottom: 2rem;
+}
+
+.subscribe .content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border: 0.3rem solid #10221b;
+  border-radius: 10rem;
+}
+
+.subscribe .content form input {
+  font-size: 1.4rem;
+  color: #10221b;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.subscribe .content form label {
+  padding: 1rem 2rem;
+  border: 0.3rem solid #10221b;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #10221b;
+  cursor: pointer;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.subscribe .content form label:hover {
+  background-color: #fff;
+  color: #10221b;
+}
+/*# sourceMappingURL=subscribe.css.map */

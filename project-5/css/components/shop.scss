@@ -1,0 +1,91 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* SHOP */
+.shop {
+  .slide {
+    border: $border;
+
+    .image {
+      position: relative;
+      height: 30rem;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      &:hover .icons {
+        bottom: 1rem;
+      }
+
+      .icons {
+        position: absolute;
+        left: 50%;
+        bottom: -3rem;
+        transform: translateX(-50%);
+        transition: 0.5s linear;
+
+        i {
+          font-size: 1.6rem;
+          color: $color-white;
+          background-color: $color-dark-green;
+          width: 3rem;
+          height: 3rem;
+          line-height: 3rem;
+          text-align: center;
+          cursor: pointer;
+          transition: 0.5s linear;
+
+          &:hover {
+            background-color: $color-green;
+          }
+
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 2rem;
+      background-color: $color-white;
+      text-align: center;
+
+      h3 {
+        font-size: 1.8rem;
+        color: $color-dark-green;
+      }
+
+      span {
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-green;
+      }
+
+      .stars i {
+        font-size: 1rem;
+        color: $color-dark-green;
+      }
+    }
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: $color-dark-green;
+
+    &::after {
+      color: $color-white;
+    }
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 1.4rem;
+    color: $color-dark-green;
+  }
+}

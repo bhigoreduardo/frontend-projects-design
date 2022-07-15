@@ -1,0 +1,32 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* ABOUT */
+.about .box-container {
+  @include gridTemplate(30rem);
+
+  .box {
+    padding: 2rem;
+    text-align: center;
+
+    img {
+      height: 20rem;
+      width: auto;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $color-green;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: $color-dark-green;
+      margin-bottom: 2rem;
+    }
+  }
+}

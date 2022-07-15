@@ -1,0 +1,91 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* GRID TEMPLATE */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  resize: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* SECTION COMPONENT */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 2.6rem;
+  color: #10221b;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #10221b;
+  border: 0.3rem solid #10221b;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.button:hover {
+  background-color: #10221b;
+  color: #fff;
+}
+/*# sourceMappingURL=helpers.css.map */

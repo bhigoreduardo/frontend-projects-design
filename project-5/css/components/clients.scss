@@ -1,0 +1,12 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* CLIENTS */
+.clients .slide {
+  text-align: center;
+
+  img {
+    height: 15rem;
+    width: auto;
+  }
+}

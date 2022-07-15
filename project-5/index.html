@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SwiperJs CSS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- SwiperJs JS CDN Link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+    <!-- Custom Slider Js File Link -->
+    <script src="./js/slider.js" defer></script>
+    <!-- Custom JS File Link -->
+    <script src="./js/main.js" defer></script>
+
+    <!-- OG Tags Site -->
+    <meta property="og:title" content="Front End - Travel Adventure" />
+    <meta property="og:site" content="https://github.com/bhigoreduardo/learn-front-end-travel-1" />
+    <meta property="og:site_name" content="Front End - Travel" />
+    <meta property="og:image" content="https://github.com/bhigoreduardo/learn-front-end-travel-1/assets/icons/favicon.png" />
+    <meta property="og:description" content="Passeis e viagens radicais" />
+
+    <!-- Tags Google -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Passeis e viagens radicais" />
+    <meta name="keywords" content="Viagem, Aventura, Passeios" />
+    <meta name="copyright" content="Desenvolvido por Higor Eduardo" />
+    <meta name="author" content="Desenvolvido por Higor Eduardo" />
+
+    <!-- OG Tags Twitter -->
+    <meta property="twitter:title" content="Front End - Travel" />
+    <meta property="twitter:description" content="Passeis e viagens radicais" />
+    <meta property="twitter:image" content="" />
+
+    <!-- Search Console Google -->
+    <meta name="google-site-verification" content="" />
+
+    <!-- Hotjar Tracking Code for domain.com.br -->
+
+    <link rel="icon" href="./assets/icons/favicon.webp" type="image/x-icon">
+    <title>Front End - Travel</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header role="banner" id="header" class="header">
+      <a href="" class="logo"><i class="fas fa-hiking"></i>Travel.</a>
+
+      <nav role="navigation" aria-level="main-navigation" id="navbar" class="navbar">
+        <i id="navbar-close" class="fas fa-times"></i>
+        <a title="Home" data-target="header">Home</a>
+        <a title="Sobre" data-target="about">Sobre</a>
+        <a title="Loja" data-target="shop">Loja</a>
+        <a title="Pacotes" data-target="packages">Pacotes</a>
+        <a title="Depoimentos" data-target="testimonials">Depoimentos</a>
+        <a title="Blog" data-target="blog">Blog</a>
+      </nav>
+
+      <div class="icons">
+        <i title="Menu de navegação" id="icons-bars" class="fas fa-bars"></i>
+        <a title="Carrinho" href="" class="fas fa-shopping-cart"></a>
+        <i title="Pesquisar" id="icons-search" class="fas fa-search"></i>
+      </div>
+
+      <form id="search-form">
+        <input type="search" name="search" id="search" placeholder="Digite sua pesquisa.. " />
+        <label title="Pesquisar" for="search" class="fas fa-search"></label>
+      </form>
+    </header>
+    <!-- / HEADER -->
+
+    <main role="main">
+      <!-- BANNER -->
+      <section aria-label="Slide de serviços principal" class="banner">
+        <div class="swiper banner-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide" style="background: url(./assets/img/home-bg-1.jpg) no-repeat">
+              <div class="content">
+                <span>Nunca Para de</span>
+                <h2>Explorar</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, impedit et ab quae, temporibus delectus
+                  a voluptates fuga dolores accusamus rem beatae, suscipit eaque! Nisi ab voluptatem officia quasi
+                  dolorum.
+                </p>
+                <a title="Comece Agora" href="" class="button">Comece Agora</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide second" style="background: url(./assets/img/home-bg-2.jpg) no-repeat">
+              <div class="content">
+                <span>Crie</span>
+                <h2>Paseis Incríveis</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, impedit et ab quae, temporibus delectus
+                  a voluptates fuga dolores accusamus rem beatae, suscipit eaque! Nisi ab voluptatem officia quasi
+                  dolorum.
+                </p>
+                <a title="Comece Agora" href="" class="button">Comece Agora</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(./assets/img/home-bg-3.jpg) no-repeat">
+              <div class="content">
+                <span>Explore</span>
+                <h2>Novos Mundos</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, impedit et ab quae, temporibus delectus
+                  a voluptates fuga dolores accusamus rem beatae, suscipit eaque! Nisi ab voluptatem officia quasi
+                  dolorum.
+                </p>
+                <a title="Comece Agora" href="" class="button">Comece Agora</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- / BANNER -->
+
+      <!-- ABOUT -->
+      <section aria-label="Sobre nossos serviços" id="about" class="about">
+        <h2 class="heading">Ideias de Aventura</h2>
+
+        <div class="box-container">
+          <div class="box">
+            <img title="Bungee Jump" src="./assets/img/category-1.jpg" alt="Bungee Jump" />
+            <h3>Bungee Jump</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iusto fugit nam cumque odio iure soluta
+              autem animi totam voluptatum.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Zip Lines" src="./assets/img/category-2.jpg" alt="Zip Lines" />
+            <h3>Zip Lines</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iusto fugit nam cumque odio iure soluta
+              autem animi totam voluptatum.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Canoagem" src="./assets/img/category-3.jpg" alt="Canoagem" />
+            <h3>Canoagem</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iusto fugit nam cumque odio iure soluta
+              autem animi totam voluptatum.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Caiaque" src="./assets/img/category-4.jpg" alt="Caiaque" />
+            <h3>Caiaque</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iusto fugit nam cumque odio iure soluta
+              autem animi totam voluptatum.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+        </div>
+      </section>
+      <!-- / ABOUT -->
+
+      <!-- DESCRIPTION -->
+      <section aria-label="Descrição de nossos serviços" class="description">
+        <div class="image">
+          <img title="Sobre" src="./assets/img/about-img.jpg" alt="Sobre" />
+        </div>
+
+        <div class="content">
+          <h2>Experiências Memoráveis ao Ar Livre</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quibusdam, quos neque porro doloribus ab vitae
+            dolor praesentium quo dolorum placeat eligendi, repellendus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod unde, autem commodi ipsum, esse ipsa officiis
+            deserunt sint natus sapiente quia recusandae voluptates molestiae enim pariatur beatae. Dolores, illum
+            aspernatur!
+          </p>
+          <a title="Leia Mais" href="" class="button">Leia Mais</a>
+        </div>
+      </section>
+      <!-- / DESCRIPTION -->
+
+      <!-- SHOP -->
+      <section aria-label="Nossos produtos" id="shop" class="shop">
+        <h2 class="heading">Produtos em Destaque</h2>
+
+        <div class="swiper products-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img title="Kits de Suprimentos" src="./assets/img/product-1.jpg" alt="Kits de Suprimentos" />
+
+                <div class="icons">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-eye"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Kits de Suprimentos</h3>
+                <span>R$5.00 - R$25.00</span>
+
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img title="Kits de Suprimentos" src="./assets/img/product-2.jpg" alt="Kits de Suprimentos" />
+
+                <div class="icons">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-eye"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Kits de Suprimentos</h3>
+                <span>R$5.00 - R$25.00</span>
+
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img title="Kits de Suprimentos" src="./assets/img/product-3.jpg" alt="Kits de Suprimentos" />
+
+                <div class="icons">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-eye"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Kits de Suprimentos</h3>
+                <span>R$5.00 - R$25.00</span>
+
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img title="Kits de Suprimentos" src="./assets/img/product-4.jpg" alt="Kits de Suprimentos" />
+
+                <div class="icons">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-eye"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Kits de Suprimentos</h3>
+                <span>R$5.00 - R$25.00</span>
+
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img title="Kits de Suprimentos" src="./assets/img/product-5.jpg" alt="Kits de Suprimentos" />
+
+                <div class="icons">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-eye"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Kits de Suprimentos</h3>
+                <span>R$5.00 - R$25.00</span>
+
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img title="Kits de Suprimentos" src="./assets/img/product-6.jpg" alt="Kits de Suprimentos" />
+
+                <div class="icons">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-eye"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+
+              <div class="content">
+                <h3>Kits de Suprimentos</h3>
+                <span>R$5.00 - R$25.00</span>
+
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- / SHOP -->
+
+      <!-- PACKAGES -->
+      <section aria-label="Nossos pacotes" id="packages" class="packages">
+        <h2 class="heading">Pacotes em Destaques</h2>
+
+        <div class="card-container">
+          <article class="card">
+            <img title="Atividades do Pacote" src="./assets/img/img-1.jpg" alt="Atividades do Pacote" />
+            <h3>Atividades do Pacote</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere commodi possimus quis qui, voluptas
+              consequuntur exercitationem rem dignissimos illum magnam nesciunt perspiciatis labore explicabo omnis!
+              Distinctio nulla porro accusantium consequuntur!
+            </p>
+            <span>R$50.00 - R$250.00</span>
+            <a title="Saiba Mais" href="" class="button">Saiba Mais</a>
+          </article>
+
+          <article class="card">
+            <img title="Atividades do Pacote" src="./assets/img/img-2.jpg" alt="Atividades do Pacote" />
+            <h3>Atividades do Pacote</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere commodi possimus quis qui, voluptas
+              consequuntur exercitationem rem dignissimos illum magnam nesciunt perspiciatis labore explicabo omnis!
+              Distinctio nulla porro accusantium consequuntur!
+            </p>
+            <span>R$50.00 - R$250.00</span>
+            <a title="Saiba Mais" href="" class="button">Saiba Mais</a>
+          </article>
+
+          <article class="card">
+            <img title="Atividades do Pacote" src="./assets/img/img-3.jpg" alt="Atividades do Pacote" />
+            <h3>Atividades do Pacote</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere commodi possimus quis qui, voluptas
+              consequuntur exercitationem rem dignissimos illum magnam nesciunt perspiciatis labore explicabo omnis!
+              Distinctio nulla porro accusantium consequuntur!
+            </p>
+            <span>R$50.00 - R$250.00</span>
+            <a title="Saiba Mais" href="" class="button">Saiba Mais</a>
+          </article>
+
+          <article class="card">
+            <img title="Atividades do Pacote" src="./assets/img/img-4.jpg" alt="Atividades do Pacote" />
+            <h3>Atividades do Pacote</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere commodi possimus quis qui, voluptas
+              consequuntur exercitationem rem dignissimos illum magnam nesciunt perspiciatis labore explicabo omnis!
+              Distinctio nulla porro accusantium consequuntur!
+            </p>
+            <span>R$50.00 - R$250.00</span>
+            <a title="Saiba Mais" href="" class="button">Saiba Mais</a>
+          </article>
+
+          <article class="card">
+            <img title="Atividades do Pacote" src="./assets/img/img-5.jpg" alt="Atividades do Pacote" />
+            <h3>Atividades do Pacote</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere commodi possimus quis qui, voluptas
+              consequuntur exercitationem rem dignissimos illum magnam nesciunt perspiciatis labore explicabo omnis!
+              Distinctio nulla porro accusantium consequuntur!
+            </p>
+            <span>R$50.00 - R$250.00</span>
+            <a title="Saiba Mais" href="" class="button">Saiba Mais</a>
+          </article>
+
+          <article class="card">
+            <img title="Atividades do Pacote" src="./assets/img/img-6.jpg" alt="Atividades do Pacote" />
+            <h3>Atividades do Pacote</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere commodi possimus quis qui, voluptas
+              consequuntur exercitationem rem dignissimos illum magnam nesciunt perspiciatis labore explicabo omnis!
+              Distinctio nulla porro accusantium consequuntur!
+            </p>
+            <span>R$50.00 - R$250.00</span>
+            <a title="Saiba Mais" href="" class="button">Saiba Mais</a>
+          </article>
+        </div>
+      </section>
+      <!-- / PACKAGES -->
+
+      <!-- TESTIMONIALS -->
+      <section aria-label="Depoimentos de clientes" id="testimonials" class="testimonials">
+        <h2 class="heading">Depoimentos de Clientes</h2>
+
+        <div class="swiper testimonials-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem maxime eaque, libero enim nobis
+                architecto autem perspiciatis asperiores fuga officia, nam voluptatum. Eveniet culpa expedita sint ullam
+                et praesentium minima ut consequuntur aspernatur magni!
+              </p>
+
+              <div class="user-info">
+                <img title="Usuário" src="./assets/img/pic-1.png" alt="Usuário" />
+
+                <div class="user-data">
+                  <span>John Doe</span>
+
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem maxime eaque, libero enim nobis
+                architecto autem perspiciatis asperiores fuga officia, nam voluptatum. Eveniet culpa expedita sint ullam
+                et praesentium minima ut consequuntur aspernatur magni!
+              </p>
+
+              <div class="user-info">
+                <img title="Usuário" src="./assets/img/pic-2.png" alt="Usuário" />
+
+                <div class="user-data">
+                  <span>John Doe</span>
+
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem maxime eaque, libero enim nobis
+                architecto autem perspiciatis asperiores fuga officia, nam voluptatum. Eveniet culpa expedita sint ullam
+                et praesentium minima ut consequuntur aspernatur magni!
+              </p>
+
+              <div class="user-info">
+                <img title="Usuário" src="./assets/img/pic-3.png" alt="Usuário" />
+
+                <div class="user-data">
+                  <span>John Doe</span>
+
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem maxime eaque, libero enim nobis
+                architecto autem perspiciatis asperiores fuga officia, nam voluptatum. Eveniet culpa expedita sint ullam
+                et praesentium minima ut consequuntur aspernatur magni!
+              </p>
+
+              <div class="user-info">
+                <img title="Usuário" src="./assets/img/pic-4.png" alt="Usuário" />
+
+                <div class="user-data">
+                  <span>John Doe</span>
+
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem maxime eaque, libero enim nobis
+                architecto autem perspiciatis asperiores fuga officia, nam voluptatum. Eveniet culpa expedita sint ullam
+                et praesentium minima ut consequuntur aspernatur magni!
+              </p>
+
+              <div class="user-info">
+                <img title="Usuário" src="./assets/img/pic-5.png" alt="Usuário" />
+
+                <div class="user-data">
+                  <span>John Doe</span>
+
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi rem maxime eaque, libero enim nobis
+                architecto autem perspiciatis asperiores fuga officia, nam voluptatum. Eveniet culpa expedita sint ullam
+                et praesentium minima ut consequuntur aspernatur magni!
+              </p>
+
+              <div class="user-info">
+                <img title="Usuário" src="./assets/img/pic-6.png" alt="Usuário" />
+
+                <div class="user-data">
+                  <span>John Doe</span>
+
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / TESTIMONIALS -->
+
+      <!-- SERVICES -->
+      <section aria-label="Nossos serviços" class="services">
+        <h2 class="heading">Nossos Serviços</h2>
+
+        <div class="box-container">
+          <div class="box">
+            <img title="Guia Completo" src="./assets/img/serv-1.png" alt="Guia Completo" />
+            <h3>Guia Completo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim et odit libero, molestiae sint eaque
+              explicabo nostrum sapiente, iure id rerum illum nam totam.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Guia Completo" src="./assets/img/serv-2.png" alt="Guia Completo" />
+            <h3>Guia Completo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim et odit libero, molestiae sint eaque
+              explicabo nostrum sapiente, iure id rerum illum nam totam.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Guia Completo" src="./assets/img/serv-3.png" alt="Guia Completo" />
+            <h3>Guia Completo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim et odit libero, molestiae sint eaque
+              explicabo nostrum sapiente, iure id rerum illum nam totam.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Guia Completo" src="./assets/img/serv-4.png" alt="Guia Completo" />
+            <h3>Guia Completo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim et odit libero, molestiae sint eaque
+              explicabo nostrum sapiente, iure id rerum illum nam totam.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Guia Completo" src="./assets/img/serv-5.png" alt="Guia Completo" />
+            <h3>Guia Completo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim et odit libero, molestiae sint eaque
+              explicabo nostrum sapiente, iure id rerum illum nam totam.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+
+          <div class="box">
+            <img title="Guia Completo" src="./assets/img/serv-6.png" alt="Guia Completo" />
+            <h3>Guia Completo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo enim et odit libero, molestiae sint eaque
+              explicabo nostrum sapiente, iure id rerum illum nam totam.
+            </p>
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+          </div>
+        </div>
+      </section>
+      <!-- / SERVICES -->
+
+      <!-- BLOG -->
+      <section aria-label="Nosso blog de publicações" id="blog" class="blog">
+        <h2 class="heading">Nossos Posts Diários</h2>
+
+        <div class="swiper blog-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img title="Postagem" src="./assets/img/img-1.jpg" alt="Postagem" />
+
+                <div class="head">
+                  <div class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span>21 Maio, 2022</span>
+                  </div>
+
+                  <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span>John Doe</span>
+                  </div>
+                </div>
+
+                <h3>Título do Post</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum. Alias saepe ea, quae molestias
+                  sunt enim, molestiae eveniet illum eligendi tempora incidunt reprehenderit cum?
+                </p>
+                <a title="Leia Mais" href="" class="button">Leia Mais</a>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img title="Postagem" src="./assets/img/img-2.jpg" alt="Postagem" />
+
+                <div class="head">
+                  <div class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span>21 Maio, 2022</span>
+                  </div>
+
+                  <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span>John Doe</span>
+                  </div>
+                </div>
+
+                <h3>Título do Post</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum. Alias saepe ea, quae molestias
+                  sunt enim, molestiae eveniet illum eligendi tempora incidunt reprehenderit cum?
+                </p>
+                <a title="Leia Mais" href="" class="button">Leia Mais</a>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img title="Postagem" src="./assets/img/img-3.jpg" alt="Postagem" />
+
+                <div class="head">
+                  <div class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span>21 Maio, 2022</span>
+                  </div>
+
+                  <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span>John Doe</span>
+                  </div>
+                </div>
+
+                <h3>Título do Post</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum. Alias saepe ea, quae molestias
+                  sunt enim, molestiae eveniet illum eligendi tempora incidunt reprehenderit cum?
+                </p>
+                <a title="Leia Mais" href="" class="button">Leia Mais</a>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img title="Postagem" src="./assets/img/img-4.jpg" alt="Postagem" />
+
+                <div class="head">
+                  <div class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span>21 Maio, 2022</span>
+                  </div>
+
+                  <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span>John Doe</span>
+                  </div>
+                </div>
+
+                <h3>Título do Post</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum. Alias saepe ea, quae molestias
+                  sunt enim, molestiae eveniet illum eligendi tempora incidunt reprehenderit cum?
+                </p>
+                <a title="Leia Mais" href="" class="button">Leia Mais</a>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img title="Postagem" src="./assets/img/img-5.jpg" alt="Postagem" />
+
+                <div class="head">
+                  <div class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span>21 Maio, 2022</span>
+                  </div>
+
+                  <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span>John Doe</span>
+                  </div>
+                </div>
+
+                <h3>Título do Post</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum. Alias saepe ea, quae molestias
+                  sunt enim, molestiae eveniet illum eligendi tempora incidunt reprehenderit cum?
+                </p>
+                <a title="Leia Mais" href="" class="button">Leia Mais</a>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img title="Postagem" src="./assets/img/img-6.jpg" alt="Postagem" />
+
+                <div class="head">
+                  <div class="date">
+                    <i class="fas fa-calendar"></i>
+                    <span>21 Maio, 2022</span>
+                  </div>
+
+                  <div class="author">
+                    <i class="fas fa-user"></i>
+                    <span>John Doe</span>
+                  </div>
+                </div>
+
+                <h3>Título do Post</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, rerum. Alias saepe ea, quae molestias
+                  sunt enim, molestiae eveniet illum eligendi tempora incidunt reprehenderit cum?
+                </p>
+                <a title="Leia Mais" href="" class="button">Leia Mais</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / BLOG -->
+
+      <!-- SUBSCRIBE -->
+      <section aria-label="Assine nossa newsletter" class="subscribe">
+        <h2 class="heading">Inscreva-se Agora</h2>
+
+        <div class="content">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ex quidem iusto sunt ipsa quibusdam omnis,
+            commodi quaerat vel distinctio earum cumque, assumenda veniam quis doloremque, accusamus cupiditate
+            aspernatur! Maxime!
+          </p>
+
+          <form>
+            <input type="email" name="email" id="sub" />
+            <label title="Inscrever" for="sub">Inscrever</label>
+          </form>
+        </div>
+      </section>
+      <!-- / SUBSCRIBE -->
+
+      <!-- CLIENTS -->
+      <section aria-label="Nossos clientes e parceiros" class="clients">
+        <div class="swiper clients-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <img title="Clientes" src="./assets/img/client-logo-1.png" alt="Clientes" />
+            </div>
+
+            <div class="swiper-slide slide">
+              <img title="Clientes" src="./assets/img/client-logo-2.png" alt="Clientes" />
+            </div>
+
+            <div class="swiper-slide slide">
+              <img title="Clientes" src="./assets/img/client-logo-3.png" alt="Clientes" />
+            </div>
+
+            <div class="swiper-slide slide">
+              <img title="Clientes" src="./assets/img/client-logo-4.png" alt="Clientes" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / CLIENTS -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Links Rápidos</h3>
+          <nav class="navbar">
+            <a title="Home" data-target="header">Home</a>
+            <a title="Sobre" data-target="about">Sobre</a>
+            <a title="Loja" data-target="shop">Loja</a>
+            <a title="Pacotes" data-target="packages">Pacotes</a>
+            <a title="Depoimentos" data-target="testimonials">Depoimentos</a>
+            <a title="Blog" data-target="blog">Blog</a>
+          </nav>
+        </div>
+
+        <div class="box">
+          <h3>Links Extras</h3>
+          <a title="Minha Conta" href="">Minha Conta</a>
+          <a title="Meus Pedidos" href="">Meus Pedidos</a>
+          <a title="Meus Favoritos" href="">Meus Favoritos</a>
+          <a title="FAQ" href="">FAQ</a>
+          <a title="Termos de Uso" href="">Termos de Uso</a>
+          <a title="Políticas de Privacidade" href="">Políticas de Privacidade</a>
+        </div>
+
+        <div class="box">
+          <h3>Informações de Contato</h3>
+          <a title="WhatsApp" href="tel:(11) 9999-9999"><i class="fas fa-phone"></i>(11) 9999-9999</a>
+          <a title="WhatsApp" href="tel:(11) 9999-9999"><i class="fab fa-whatsapp"></i>(11) 9999-9999</a>
+          <a title="E-mail" href="mailto:email@email.com"><i class="fas fa-envelope"></i>email@email.com</a>
+          <a title="E-mail" href="mailto:email@email.com"><i class="fas fa-envelope"></i>email@email.com</a>
+        </div>
+
+        <div class="box">
+          <h3>Redes Sociais</h3>
+          <a title="Facebook" href=""><i class="fab fa-facebook"></i>Facebok</a>
+          <a title="Instagram" href=""><i class="fab fa-instagram"></i>Instagram</a>
+          <a title="Twitter" href=""><i class="fab fa-twitter"></i>Twitter</a>
+          <a title="LinkedIn" href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+    <!-- / FOOTER -->
+  </body>
+</html>

@@ -1,0 +1,138 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* GRID TEMPLATE */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  resize: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* BANNER */
+.banner {
+  padding: 0;
+}
+
+.banner .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 5%;
+  min-height: 100vh;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.banner .slide.second {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.banner .slide .content {
+  width: 100%;
+  max-width: 60rem;
+}
+
+.banner .slide .content span,
+.banner .slide .content h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.banner .slide .content span {
+  color: #10221b;
+}
+
+.banner .slide .content h2 {
+  color: #219150;
+}
+
+.banner .slide .content p {
+  font-size: 1.4rem;
+  color: #10221b;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.banner .swiper-button-prev,
+.banner .swiper-button-next {
+  top: initial;
+  bottom: 0;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.banner .swiper-button-prev:hover,
+.banner .swiper-button-next:hover {
+  background-color: #10221b;
+}
+
+.banner .swiper-button-prev:hover::after,
+.banner .swiper-button-next:hover::after {
+  color: #fff;
+}
+
+.banner .swiper-button-prev::after,
+.banner .swiper-button-next::after {
+  font-size: 2rem;
+  color: #10221b;
+}
+/*# sourceMappingURL=banner.css.map */

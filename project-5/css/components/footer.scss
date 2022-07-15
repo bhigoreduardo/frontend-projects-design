@@ -1,0 +1,44 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* FOOTER */
+.footer {
+  padding: 10rem 5%;
+  background-image: url(../../assets/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .box-container {
+    @include gridTemplate(30rem);
+    align-items: stretch;
+
+    .box {
+      h3 {
+        font-size: 2rem;
+        color: $color-white;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        display: block;
+        font-size: 1.4rem;
+        transition: 0.5s linear;
+        color: $color-white;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+
+        &:hover {
+          color: $color-green;
+        }
+
+        i {
+          color: $color-green;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

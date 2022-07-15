@@ -1,0 +1,33 @@
+/* RESET COMPONENTS */
+@import "./reset.scss";
+
+/* SECTION COMPONENT */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 2.6rem;
+  color: $color-dark-green;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: $color-dark-green;
+  border: $border;
+  margin-bottom: 2rem;
+  transition: 0.5s linear;
+
+  &:hover {
+    background-color: $color-dark-green;
+    color: $color-white;
+  }
+}

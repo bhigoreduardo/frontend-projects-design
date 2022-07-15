@@ -1,0 +1,67 @@
+/* RESET COMPONENETS */
+@import "../default/reset.scss";
+
+/* BLOG */
+.blog {
+  .slide {
+    .card {
+      padding: 2rem;
+      text-align: center;
+      overflow: hidden;
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+      img {
+        height: 25rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        transition: 0.5s linear;
+      }
+
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-dark-green;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        top: -2rem;
+
+        i {
+          font-size: 1.2rem;
+          color: $color-green;
+          margin-right: 0.5rem;
+        }
+
+        span {
+          font-size: 1.2rem;
+          color: $color-white;
+          transition: 0.5s linear;
+
+          &:hover {
+            color: $color-green;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-dark-green;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $color-dark-green;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

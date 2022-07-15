@@ -1,0 +1,141 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* GRID TEMPLATE */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  resize: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* PACKAGES */
+.packages {
+  background-color: #eee;
+}
+
+.packages .card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.packages .card-container .card {
+  padding: 2rem;
+  background-color: #fff;
+  border: 0.3rem solid #10221b;
+  text-align: center;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.packages .card-container .card:hover {
+  background-color: #10221b;
+}
+
+.packages .card-container .card:hover h3,
+.packages .card-container .card:hover p {
+  color: #fff;
+}
+
+.packages .card-container .card:hover a {
+  border-color: #fff;
+  color: #fff;
+}
+
+.packages .card-container .card:hover a:hover {
+  background-color: #fff;
+  color: #10221b;
+}
+
+.packages .card-container .card img {
+  height: 20rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.packages .card-container .card h3 {
+  font-size: 2rem;
+  color: #10221b;
+  margin-bottom: 0.5rem;
+}
+
+.packages .card-container .card p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #10221b;
+  margin-bottom: 2rem;
+}
+
+.packages .card-container .card span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #219150;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .packages .card-container {
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+/*# sourceMappingURL=packages.css.map */

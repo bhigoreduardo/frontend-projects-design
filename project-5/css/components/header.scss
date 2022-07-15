@@ -1,0 +1,171 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 5%;
+  z-index: 2;
+
+  &.active {
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+  }
+
+  .logo {
+    font-size: 2rem;
+    color: $color-dark-green;
+    font-weight: 600;
+    margin-right: auto;
+
+    i {
+      color: $color-green;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .navbar {
+    .fa-times {
+      display: none;
+    }
+
+    a {
+      font-size: 1.6rem;
+      color: $color-dark-green;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+
+  .icons {
+    margin-left: 2rem;
+
+    i,
+    a {
+      font-size: 1.6rem;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      color: $color-dark-green;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+
+    #icons-bars {
+      display: none;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      top: 200%;
+      opacity: 0;
+    }
+  }
+
+  #search-form {
+    // display: flex;
+    display: none;
+    align-items: center;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 50rem;
+    padding: 1rem;
+    background-color: $color-white;
+    border: $border;
+    animation: fadeIn 0.3s linear;
+
+    &.active {
+      display: flex;
+    }
+
+    input {
+      width: 100%;
+      background-color: $color-light-bg;
+      padding: 0.5rem 1rem;
+      font-size: 1.4rem;
+      color: $color-dark-green;
+
+      &::-webkit-search-cancel-button {
+        appearance: none;
+      }
+    }
+
+    label {
+      font-size: 1.8rem;
+      color: $color-dark-green;
+      margin-left: 1rem;
+
+      &:hover {
+        color: $color-green;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 25rem;
+      background-color: $color-white;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+      transform: scale(0);
+      opacity: 0;
+      transition: 0.5s linear;
+      z-index: 3;
+
+      &.active {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      .fa-times {
+        display: inline-block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+        color: $color-dark-green;
+        transition: 0.5s linear;
+        cursor: pointer;
+
+        &:hover {
+          color: $color-green;
+          transform: rotate(360deg);
+        }
+      }
+
+      a:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .icons #icons-bars {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* TESTIMONIALS */
+.testimonials {
+  .slide {
+    p {
+      position: relative;
+      font-size: 1.2rem;
+      color: $color-dark-green;
+      background-color: $color-light-bg;
+      padding: 1rem;
+      line-height: 1.5;
+      margin-bottom: 3rem;
+      box-shadow: $box-shadow;
+
+      &::after {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        background-color: $color-light-bg;
+        position: absolute;
+        bottom: -1rem;
+        left: 1rem;
+        transform: rotate(45deg);
+      }
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+      }
+
+      span {
+        font-size: 1.4rem;
+        color: $color-dark-green;
+        font-weight: 700;
+      }
+
+      .stars i {
+        font-size: 0.8rem;
+        color: $color-dark-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* GRID TEMPLATE */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"],
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  resize: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* SHOP */
+.shop .slide {
+  border: 0.3rem solid #10221b;
+}
+
+.shop .slide .image {
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.shop .slide .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.shop .slide .image:hover .icons {
+  bottom: 1rem;
+}
+
+.shop .slide .image .icons {
+  position: absolute;
+  left: 50%;
+  bottom: -3rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.shop .slide .image .icons i {
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #10221b;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.shop .slide .image .icons i:hover {
+  background-color: #219150;
+}
+
+.shop .slide .image .icons i:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.shop .slide .content {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.shop .slide .content h3 {
+  font-size: 1.8rem;
+  color: #10221b;
+}
+
+.shop .slide .content span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #219150;
+}
+
+.shop .slide .content .stars i {
+  font-size: 1rem;
+  color: #10221b;
+}
+
+.shop .swiper-button-prev:hover,
+.shop .swiper-button-next:hover {
+  background-color: #10221b;
+}
+
+.shop .swiper-button-prev:hover::after,
+.shop .swiper-button-next:hover::after {
+  color: #fff;
+}
+
+.shop .swiper-button-prev::after,
+.shop .swiper-button-next::after {
+  font-size: 1.4rem;
+  color: #10221b;
+}
+/*# sourceMappingURL=shop.css.map */

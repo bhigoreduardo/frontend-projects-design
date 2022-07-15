@@ -1,0 +1,53 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* DESCRIPTION */
+.description {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-light-bg;
+
+  .image {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    img {
+      position: relative;
+      left: -2rem;
+      top: -2rem;
+    }
+  }
+
+  .content {
+    h2 {
+      color: $color-green;
+      font-size: 3rem;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $color-dark-green;
+      line-height: 1.5;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    grid-template-columns: 100%;
+  }
+}

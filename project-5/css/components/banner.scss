@@ -1,0 +1,72 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* BANNER */
+.banner {
+  padding: 0;
+
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 5%;
+    min-height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+
+    &.second {
+      justify-content: flex-start;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 60rem;
+
+      span,
+      h2 {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+
+      span {
+        color: $color-dark-green;
+      }
+
+      h2 {
+        color: $color-green;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $color-dark-green;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: initial;
+
+    bottom: 0;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-dark-green;
+
+      &::after {
+        color: $color-white;
+      }
+    }
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 2rem;
+    color: $color-dark-green;
+  }
+}

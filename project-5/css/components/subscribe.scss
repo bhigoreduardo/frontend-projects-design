@@ -1,0 +1,54 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* SUBSCRIBE */
+.subscribe {
+  background-color: $color-light-bg;
+
+  .content {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: $color-dark-green;
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: $color-white;
+      padding: 1rem;
+      border: $border;
+      border-radius: 10rem;
+
+      input {
+        font-size: 1.4rem;
+        color: $color-dark-green;
+        padding: 0.5rem 1rem;
+        width: 100%;
+      }
+
+      label {
+        padding: 1rem 2rem;
+        border: $border;
+        border-radius: 10rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $color-white;
+        background-color: $color-dark-green;
+        cursor: pointer;
+        transition: 0.5s linear;
+
+        &:hover {
+          background-color: $color-white;
+          color: $color-dark-green;
+        }
+      }
+    }
+  }
+}
