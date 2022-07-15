@@ -1,0 +1,39 @@
+.blog {
+  background-color: var(--light-bg-color);
+
+  .slide {
+    .image {
+      width: 90%;
+      height: 25rem;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .content {
+      background-color: var(--white-color);
+      padding: 4rem;
+      border: var(--border);
+      box-shadow: var(--box-shadow);
+      margin-top: -2rem;
+      text-align: center;
+
+      h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--black-color);
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: var(--light-color);
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

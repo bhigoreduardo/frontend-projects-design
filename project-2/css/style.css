@@ -1,0 +1,26 @@
+/* RESET COMPONENTS */
+@import url(./default/reset.css);
+@import url(./default/helpers.css);
+/* HEADER COMPONENT */
+@import url(./components/header.css);
+/* HOME COMPONENT */
+@import url(./components/home.css);
+/* ABOUT COMPONENT */
+@import url(./components/about.css);
+/* SERVICES COMPONENT */
+@import url(./components/services.css);
+/* PROJECTS COMPONENT */
+@import url(./components/projects.css);
+/* PLANS COMPONENT */
+@import url(./components/plans.css);
+/* TESTIMONIALS COMPONENT */
+@import url(./components/testimonials.css);
+/* CONTACT COMPONENT */
+@import url(./components/contact.css);
+/* BLOG COMPONENT */
+@import url(./components/blog.css);
+/* CLIENTS COMPONENT */
+@import url(./components/clients.css);
+/* FOOTER COMPONENT */
+@import url(./components/footer.css);
+/*# sourceMappingURL=style.css.map */

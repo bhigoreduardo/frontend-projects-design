@@ -1,0 +1,39 @@
+.blog {
+  background-color: var(--light-bg-color);
+}
+
+.blog .slide .image {
+  width: 90%;
+  height: 25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog .slide .image img {
+  height: 100%;
+}
+
+.blog .slide .content {
+  background-color: var(--white-color);
+  padding: 4rem;
+  border: var(--border);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  margin-top: -2rem;
+  text-align: center;
+}
+
+.blog .slide .content h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.blog .slide .content p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=blog.css.map */

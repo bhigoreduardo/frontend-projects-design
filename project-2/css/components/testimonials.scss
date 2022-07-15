@@ -1,0 +1,45 @@
+.testimonials {
+  .slide {
+    p {
+      font-size: 1.2rem;
+      color: var(--light-color);
+      background-color: var(--light-bg-color);
+      padding: 1rem;
+      line-height: 1.5;
+      position: relative;
+      margin-bottom: 2rem;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        bottom: -1rem;
+        left: 2rem;
+        background-color: var(--light-bg-color);
+        transform: rotate(45deg);
+      }
+    }
+
+    .user-info {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        width: 7rem;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--light-color);
+      }
+
+      i {
+        font-size: 1rem;
+        color: var(--light-color);
+      }
+    }
+  }
+}

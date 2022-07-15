@@ -1,0 +1,47 @@
+.testimonials .slide p {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  background-color: var(--light-bg-color);
+  padding: 1rem;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.testimonials .slide p:before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  bottom: -1rem;
+  left: 2rem;
+  background-color: var(--light-bg-color);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.testimonials .slide .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials .slide .user-info img {
+  width: 7rem;
+}
+
+.testimonials .slide .user-info span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+.testimonials .slide .user-info i {
+  font-size: 1rem;
+  color: var(--light-color);
+}
+/*# sourceMappingURL=testimonials.css.map */

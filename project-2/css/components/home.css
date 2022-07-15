@@ -1,0 +1,85 @@
+.home {
+  padding: 0;
+}
+
+.home .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 7%;
+  width: 100%;
+  min-height: 60rem;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.home .slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(var(--white-color)), to(transparent));
+  background: linear-gradient(90deg, var(--white-color), transparent);
+}
+
+.home .slide .content {
+  position: absolute;
+  width: 80%;
+  max-width: 50rem;
+}
+
+.home .slide .content h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--black-color);
+}
+
+.home .slide .content p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev {
+  top: initial;
+  left: initial;
+  bottom: 0;
+  right: 0;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.home .swiper-button-prev {
+  right: 4rem;
+}
+
+.home .swiper-button-next:after,
+.home .swiper-button-prev:after {
+  font-size: 1.6rem;
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover {
+  background-color: var(--yellow-color);
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 768px) {
+  .home .slide .content h2 {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */
