@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Persistência de Dados</title>
+</head>
+
+<body>
+    <!-- haeder section starts -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-user"></i>School.</a>
+
+        <h2>Banco dados School</h2>
+    </header>
+    <!-- haeder section ends -->
+
+    <!-- main section starts -->
+    <main>
+        <div class="title">
+            <h2>Sistema de Gestão Escolar</h2>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <h3>Cadastro da Turma</h3>
+                <input id="input-name" type="text" name="nome" placeholder="Nome do aluno">
+                <input id="input-turma" type="text" name="turma" placeholder="Turma">
+                <input id="input-n1" type="number" name="nota1" placeholder="Nota 1">
+                <input id="input-n2" type="number" name="nota2" placeholder="Nota 2">
+
+                <div class="btn-group">
+                    <button class="btn" onclick="subscribe()">Cadastrar Aluno</button>
+                    <button class="btn" onclick="registerClass()">Cadastrar Turma</button>
+                </div>
+
+                <div class="search">
+                    <input id="search-turma" type="text" name="search-turma" placeholder="Pesquise turma aqui...">
+                    <button class="btn" onclick="showClass()">Mostrar Turma</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Registro da Turma</h3>
+                <div id="show-turma"></div>
+            </div>
+        </div>
+    </main>
+    <!-- main section ends -->
+
+    <!-- footer section starts -->
+    <footer>
+        <span>Copyright © 2022 - <a href="https://bhigoreduardo.github.io/Front-End/" target="_blank">Higor Eduardo</a>
+            | Acesse
+            meu Portfólio</span>
+    </footer>
+    <!-- footer section ends -->
+
+    <!-- Custom JS File Link -->
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

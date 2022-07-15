@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+
+:root {
+    --white: #ffffff;
+    --green: #209c5f;
+    --black: #202124;
+    --dark-color: #1c2b55;
+    --light-color: #bfbbbf;
+    --box-shadow: 0 0.5rem 1.5rem rgba(255, 255, 255, 0.09);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s linear;
+}
+
+html {
+    font-family: "Nunito", sans-serif;
+    font-size: 62.5%;
+    background-color: var(--black);
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+}
+
+.title h2 {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* header section */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem 7%;
+    box-shadow: var(--box-shadow);
+    background-color: var(--black);
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+header .logo:hover {
+    color: var(--green);
+}
+
+header .logo i {
+    color: var(--green);
+}
+
+header h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    color: var(--light-color);
+    font-size: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    background-color: var(--white);
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1.5rem 3rem;
+}
+
+/* main section */
+main {
+    padding: 10rem 7%;
+}
+
+main .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main .box-container .box {
+    flex: 1 1 45rem;
+}
+
+main .box-container .box h3 {
+    font-size: 2.4rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+main .box-container .box input {
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: var(--black);
+    background-color: var(--white);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+main .box-container .box .btn-group {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main .box-container .box .search {
+    text-align: center;
+}
+
+main .box-container .box #show-turma p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+/* footer section */
+footer {
+    text-align: center;
+    padding: 2rem 7%;
+}
+
+footer span {
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+footer span a {
+    color: var(--green);
+}
