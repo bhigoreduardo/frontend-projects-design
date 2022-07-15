@@ -1,0 +1,30 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* SERVICES */
+.services {
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .box {
+      flex: 1 1 16rem;
+      background-color: $color-purple;
+      text-align: center;
+      padding: 4rem;
+      transition: 0.3s linear;
+
+      &:hover {
+        background-color: $color-black;
+      }
+
+      img {
+        height: 7rem;
+        width: auto;
+      }
+    }
+  }
+}

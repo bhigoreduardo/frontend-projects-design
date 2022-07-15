@@ -1,0 +1,89 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 5%;
+  box-shadow: $box-shadow;
+  background-color: $color-white;
+  z-index: 2;
+
+  .logo {
+    font-size: 2rem;
+    color: $color-black;
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+    color: $color-black;
+    padding: 0.5rem 1rem;
+    transition: 0.5s linear;
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      color: $color-purple;
+    }
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .navbar {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      background-color: $color-white;
+      text-align: center;
+      padding: 1rem;
+      border-bottom: $border;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: 0.3s linear;
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+
+      a {
+        display: block;
+        margin-left: 0 !important;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem !important;
+        }
+      }
+    }
+
+    .icons {
+      display: block;
+
+      i {
+        font-size: 1.4rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        transition: 0.5s linear;
+
+        &:hover {
+          background-color: $color-purple;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

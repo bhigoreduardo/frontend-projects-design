@@ -1,0 +1,50 @@
+/* VARIABLES */
+@import "./vars.scss";
+
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-family;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="submit"],
+button,
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  border: none;
+  resize: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

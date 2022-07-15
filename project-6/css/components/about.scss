@@ -1,0 +1,42 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* ABOUT */
+.about {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+      padding: 2rem;
+      background-color: $color-light-bg;
+
+      h3 {
+        font-size: 3rem;
+        color: $color-black;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $color-light-black;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about .container {
+    grid-template-columns: 100%;
+
+    img {
+      height: 40rem;
+      width: 100%;
+      align-self: flex-start;
+    }
+  }
+}

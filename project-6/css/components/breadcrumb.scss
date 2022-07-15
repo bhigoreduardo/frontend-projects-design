@@ -1,0 +1,25 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* BREADCRUMB */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 30rem;
+
+  h2 {
+    font-size: 10rem;
+    color: $color-white;
+    text-transform: uppercase;
+    text-shadow: $text-shadow;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumb h2 {
+    font-size: 5rem;
+  }
+}

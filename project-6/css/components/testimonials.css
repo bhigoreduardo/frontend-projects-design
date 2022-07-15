@@ -1,0 +1,107 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* TEXT-SHADOW */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="submit"],
+button,
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  border: none;
+  resize: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: #eee;
+}
+
+.testimonials .slide {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .slide .stars {
+  margin-bottom: 1rem;
+}
+
+.testimonials .slide .stars i {
+  font-size: 1rem;
+  color: #8e44ad;
+}
+
+.testimonials .slide p {
+  font-size: 1.4rem;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.testimonials .slide span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.testimonials .slide small {
+  display: block;
+  font-size: 1.2rem;
+  color: #8e44ad;
+}
+
+.testimonials .slide img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=testimonials.css.map */

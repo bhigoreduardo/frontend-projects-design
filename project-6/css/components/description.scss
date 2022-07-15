@@ -1,0 +1,67 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* DESCRIPTION */
+.description {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+      text-align: center;
+
+      h3 {
+        font-size: 3rem;
+        color: $color-black;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $color-light-black;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .icon-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+
+      .icon {
+        flex: 1 1 17rem;
+        background-color: $color-light-bg;
+        padding: 2rem;
+
+        i {
+          font-size: 3rem;
+          color: $color-purple;
+          margin-bottom: 1rem;
+        }
+
+        span {
+          display: block;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .description .container {
+    grid-template-columns: 100%;
+
+    img {
+      height: 40rem;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* TEXT-SHADOW */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="submit"],
+button,
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  border: none;
+  resize: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* DESCRIPTION */
+.description .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description .container .content {
+  text-align: center;
+}
+
+.description .container .content h3 {
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.description .container .content p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.description .container .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.description .container .icon-container .icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 17rem;
+          flex: 1 1 17rem;
+  background-color: #eee;
+  padding: 2rem;
+}
+
+.description .container .icon-container .icon i {
+  font-size: 3rem;
+  color: #8e44ad;
+  margin-bottom: 1rem;
+}
+
+.description .container .icon-container .icon span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+@media screen and (max-width: 992px) {
+  .description .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .description .container img {
+    height: 40rem;
+  }
+}
+/*# sourceMappingURL=description.css.map */

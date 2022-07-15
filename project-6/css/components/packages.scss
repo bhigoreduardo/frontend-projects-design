@@ -1,0 +1,59 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* PACKAGES */
+.packages {
+  background-color: $color-light-bg;
+  text-align: center;
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .card {
+      text-align: center;
+      background-color: $color-white;
+      border: $border;
+
+      &:nth-child(n + 7) {
+        display: none;
+      }
+
+      &:hover img {
+        transition: 0.3s linear;
+        transform: scale(1.1);
+      }
+
+      .image {
+        overflow: hidden;
+      }
+
+      .content {
+        padding: 2rem;
+
+        h3 {
+          font-size: 3.6rem;
+          color: $color-black;
+          font-weight: 700;
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.5;
+          color: $color-light-black;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .packages .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

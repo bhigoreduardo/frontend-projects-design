@@ -1,0 +1,49 @@
+/* RESET COMPONENTS */
+@import "../default/reset.scss";
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: $color-light-bg;
+
+  .slide {
+    background-color: $color-white;
+    padding: 2rem;
+    text-align: center;
+    border: $border;
+    box-shadow: $box-shadow;
+
+    .stars {
+      margin-bottom: 1rem;
+
+      i {
+        font-size: 1rem;
+        color: $color-purple;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: $color-light-black;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+
+    span {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    small {
+      display: block;
+      font-size: 1.2rem;
+      color: $color-purple;
+    }
+
+    img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+    }
+  }
+}

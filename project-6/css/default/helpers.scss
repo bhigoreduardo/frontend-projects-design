@@ -1,0 +1,37 @@
+/* RESET COMPONENTS */
+@import "./reset.scss";
+
+/* SECTION COMPONENTS */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: $color-black;
+  color: $color-white;
+  font-size: 1.5rem;
+  transition: 0.3s linear;
+  margin-bottom: 2rem;
+
+  &:hover {
+    background-color: $color-purple;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+}

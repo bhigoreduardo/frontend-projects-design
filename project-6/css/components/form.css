@@ -1,0 +1,112 @@
+/* RESET COMPONENTS */
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* TEXT-SHADOW */
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="submit"],
+button,
+select {
+  border: none;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  border: none;
+  resize: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* FORM */
+.form .form-booking {
+  margin: 0 auto;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #eee;
+  width: 100%;
+  max-width: 90rem;
+}
+
+.form .form-booking .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form .form-booking .box-container label {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.form .form-booking .box-container .input-box {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #222;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.form .form-booking .box-container .input-box:focus {
+  background-color: #222;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .form .form-booking .box-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+/*# sourceMappingURL=form.css.map */
