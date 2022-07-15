@@ -1,0 +1,74 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* ORDER */
+.order {
+  background-color: #cd9452;
+}
+
+.order .heading,
+.order .sub-heading {
+  color: #fff;
+}
+
+.order form {
+  width: 100%;
+  background-color: #fff;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.order form .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.order form .box-container .box label {
+  display: block;
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.order form .box-container .box .input-box {
+  font-size: 1.6rem;
+  color: #222;
+  padding: 0.5rem;
+  border: 0.1rem solid #aaaaaa;
+  width: 100%;
+}
+
+.order form .box-container .box .input-box:focus {
+  background-color: #222;
+  color: #fff;
+}
+
+.order form .box-container .box .map {
+  width: 100%;
+  height: 22rem;
+}
+
+@media screen and (max-width: 768px) {
+  .order form .box-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+/*# sourceMappingURL=orders.css.map */

@@ -1,0 +1,100 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* MENU */
+.menu {
+  background-color: #f5f5f5;
+}
+
+.menu .slide h3 {
+  background-color: #cd9452;
+  padding: 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #aaaaaa;
+}
+
+.menu .slide .card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .slide .card-container .card {
+  padding: 2rem;
+  background-color: #fff;
+  border: 0.1rem solid #aaaaaa;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.menu .slide .card-container .card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.menu .slide .card-container .card .content h4 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.menu .slide .card-container .card .content p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.menu .slide .card-container .card span {
+  font-size: 2.4rem;
+  color: #cd9452;
+  font-weight: 700;
+}
+
+.menu .swiper-wrapper {
+  margin-bottom: 4rem;
+}
+
+.menu .swiper-pagination-bullet {
+  background-color: #666;
+}
+
+.menu .swiper-pagination-bullet-active {
+  background-color: #cd9452;
+}
+
+@media screen and (max-width: 768px) {
+  .menu .slide .card-container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

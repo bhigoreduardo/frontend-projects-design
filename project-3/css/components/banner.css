@@ -1,0 +1,138 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* BANNER */
+.banner {
+  padding: 0;
+  width: 100vw;
+}
+
+.banner .slide {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-position: center !important;
+  background-size: cover !important;
+  z-index: 0;
+}
+
+.banner .slide:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(-4rem) scale(0);
+            transform: translateY(-4rem) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(-4rem) scale(0);
+            transform: translateY(-4rem) scale(0);
+    opacity: 0;
+  }
+}
+
+.banner .slide .content {
+  display: none;
+  text-align: center;
+  width: 90%;
+  max-width: 80rem;
+}
+
+.banner .slide .content span {
+  font-size: 2rem;
+  color: #ccc;
+  -webkit-animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.4s backwards;
+          animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.4s backwards;
+}
+
+.banner .slide .content h2 {
+  font-size: 12rem;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.6s backwards;
+          animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.6s backwards;
+}
+
+.banner .slide .content h2:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.banner .slide .content .button {
+  -webkit-animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.8s backwards;
+          animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.8s backwards;
+}
+
+.banner .swiper-slide-active.slide .content {
+  display: block;
+}
+
+.banner .swiper-button-prev,
+.banner .swiper-button-next {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #fff;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.banner .swiper-button-prev::after,
+.banner .swiper-button-next::after {
+  font-size: 2rem;
+  color: #222;
+}
+
+.banner .swiper-button-prev:hover,
+.banner .swiper-button-next:hover {
+  background-color: #cd9452;
+}
+
+.banner .swiper-button-prev:hover::after,
+.banner .swiper-button-next:hover::after {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .banner .slide .content h2 {
+    font-size: 8rem;
+  }
+  .banner .swiper-button-prev,
+  .banner .swiper-button-next {
+    top: initial;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner .slide .content h2 {
+    font-size: 6rem;
+  }
+}
+/*# sourceMappingURL=banner.css.map */

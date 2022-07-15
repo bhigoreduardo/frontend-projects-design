@@ -1,0 +1,62 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* ORDER */
+.order {
+  background-color: $color-bege;
+
+  .heading,
+  .sub-heading {
+    color: $color-white;
+  }
+
+  form {
+    width: 100%;
+    background-color: $color-white;
+    padding: 2rem;
+    box-shadow: $box-shadow;
+
+    .box-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      .box {
+        label {
+          display: block;
+          font-size: 1.2rem;
+          color: $color-black;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+        }
+
+        .input-box {
+          font-size: 1.6rem;
+          color: $color-black;
+          padding: 0.5rem;
+          border: $border;
+          width: 100%;
+
+          &:focus {
+            background-color: $color-black;
+            color: $color-white;
+          }
+        }
+
+        .map {
+          width: 100%;
+          height: 22rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order form .box-container {
+    grid-template-columns: 100%;
+  }
+}

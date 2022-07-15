@@ -1,0 +1,75 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* BLOG */
+.blog {
+  background-color: #f5f5f5;
+}
+
+.blog .slide {
+  background-color: #fff;
+  border: 0.1rem solid #aaaaaa;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.blog .slide .content {
+  padding: 2rem;
+}
+
+.blog .slide .content .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.blog .slide .content .head .date i,
+.blog .slide .content .head .author i {
+  color: #cd9452;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.blog .slide .content .head .date span,
+.blog .slide .content .head .author span {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.blog .slide .content h3 {
+  font-size: 2.4rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.blog .slide .content p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.blog .swiper-pagination-bullet {
+  background-color: #666;
+}
+
+.blog .swiper-pagination-bullet-active {
+  background-color: #cd9452;
+}
+
+.blog .swiper-wrapper {
+  margin-bottom: 4rem;
+}
+/*# sourceMappingURL=blog.css.map */

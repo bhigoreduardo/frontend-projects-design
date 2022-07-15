@@ -1,0 +1,79 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* FOOTER */
+.footer {
+  padding: 10rem 5%;
+  text-align: center;
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    .box {
+      flex: 1 1 30rem;
+
+      i {
+        display: inline-block;
+        font-size: 1.8rem;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-bege;
+        border: 0.1rem solid transparent;
+        transition: 0.3s linear;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+
+        &:hover {
+          color: $color-bege;
+          border-color: $color-bege;
+          background-color: $color-white;
+          transform: rotate(360deg);
+        }
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        color: $color-black;
+        margin-bottom: 1rem;
+      }
+
+      a,
+      span {
+        display: block;
+        font-size: 1.4rem;
+        color: $color-light-black;
+      }
+    }
+  }
+
+  .icon-container {
+    i {
+      font-size: 2rem;
+      color: $color-white;
+      background-color: $color-black;
+      width: 5rem;
+      height: 5rem;
+      line-height: 5rem;
+      text-align: center;
+      transition: 0.3s linear;
+      border: 0.1rem solid transparent;
+
+      &:hover {
+        color: $color-black;
+        border-color: $color-black;
+        background-color: $color-white;
+      }
+
+      &:not(:last-child) {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

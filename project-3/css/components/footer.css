@@ -1,0 +1,93 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* FOOTER */
+.footer {
+  padding: 10rem 5%;
+  text-align: center;
+}
+
+.footer .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer .box-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.footer .box-container .box i {
+  display: inline-block;
+  font-size: 1.8rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #cd9452;
+  border: 0.1rem solid transparent;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.footer .box-container .box i:hover {
+  color: #cd9452;
+  border-color: #cd9452;
+  background-color: #fff;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.footer .box-container .box h3 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.footer .box-container .box a,
+.footer .box-container .box span {
+  display: block;
+  font-size: 1.4rem;
+  color: #666;
+}
+
+.footer .icon-container i {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #222;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  border: 0.1rem solid transparent;
+}
+
+.footer .icon-container i:hover {
+  color: #222;
+  border-color: #222;
+  background-color: #fff;
+}
+
+.footer .icon-container i:not(:last-child) {
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=footer.css.map */

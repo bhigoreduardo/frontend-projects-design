@@ -1,0 +1,57 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* GALLERY */
+.gallery {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .box {
+      position: relative;
+      height: 35rem;
+
+      &:hover {
+        .overlay {
+          display: block;
+        }
+      }
+
+      img {
+        height: 100%;
+      }
+
+      .overlay {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-dark-bg;
+
+        i {
+          font-size: 3rem;
+          color: $color-white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.3s linear;
+
+          &:hover {
+            color: $color-bege;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

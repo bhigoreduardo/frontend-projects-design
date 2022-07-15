@@ -1,0 +1,58 @@
+/* VARIABLES */
+@import "./vars.scss";
+
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-family;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $color-white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-bege;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea,
+iframe {
+  font-family: inherit;
+  border: none;
+  resize: none;
+}
+
+button,
+input [type="submit"] {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

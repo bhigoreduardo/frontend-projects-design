@@ -1,0 +1,38 @@
+/* VARIABLES */
+@import "./vars.scss";
+
+/* SECTION COMPONENTS */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 4rem;
+  color: $color-black;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 2rem;
+  color: $color-bege;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  color: $color-white;
+  background-color: $color-bege;
+  margin-bottom: 2rem;
+  transition: 0.3s linear;
+
+  &:hover {
+    letter-spacing: 0.1rem;
+  }
+}

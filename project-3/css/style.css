@@ -1,0 +1,23 @@
+/* RESET COMPONENTS */
+@import url(./default/reset.css);
+/* HELPERS COMPONENTS */
+@import url(./default/helpers.css);
+/* HEADER */
+@import url(./components/header.css);
+/* BANNER */
+@import url(./components/banner.css);
+/* ABOUT */
+@import url(./components/about.css);
+/* DISHES */
+@import url(./components/dishes.css);
+/* GALLERY */
+@import url(./components/gallery.css);
+/* MENU */
+@import url(./components/menu.css);
+/* ORDER */
+@import url(./components/orders.css);
+/* BLOG */
+@import url(./components/blog.css);
+/* FOOTER */
+@import url(./components/footer.css);
+/*# sourceMappingURL=style.css.map */

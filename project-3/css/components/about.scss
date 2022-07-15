@@ -1,0 +1,66 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* ABOUT */
+.about {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+      h3 {
+        font-size: 3rem;
+        color: $color-black;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $color-light-black;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+      }
+
+      .icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .icon {
+          flex: 1 1 17rem;
+          padding: 2rem;
+          background-color: $color-light-bg;
+          text-align: center;
+
+          img {
+            height: 6rem;
+            width: auto;
+            margin-bottom: 1rem;
+          }
+
+          span {
+            display: block;
+            font-size: 1.2rem;
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about .container {
+    grid-template-columns: 100%;
+
+    img {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}

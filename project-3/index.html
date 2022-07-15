@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Light Gallery CSS CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+    <!-- SwiperJs CSS CDN Link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Custom CSS File Link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Light Gallery JS CDN Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" defer></script>
+    <!-- SwiperJs JS CDN Link -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+    <!-- Custom Slider JS File Link -->
+    <script src="./js/slider.js" defer></script>
+    <!-- Custom JS File Link -->
+    <script src="./js/main.js" defer></script>
+
+    <!-- OG Tags Site -->
+    <meta property="og:title" content="Front End - Coffee Restaurant" />
+    <meta property="og:site" content="https://github.com/bhigoreduardo/learn-front-end-coffee-1" />
+    <meta property="og:site_name" content="Front End - Coffee" />
+    <meta property="og:image" content="https://github.com/bhigoreduardo/learn-front-end-coffee-1/assets/icons/favicon.png" />
+    <meta property="og:description" content="Restaurante e cafeteria" />
+
+    <!-- Tags Google -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Restaurante e cafeteria" />
+    <meta name="keywords" content="Restaurante, cafeteria, Coffee Break" />
+    <meta name="copyright" content="Desenvolvido por Higor Eduardo" />
+    <meta name="author" content="Desenvolvido por Higor Eduardo" />
+
+    <!-- OG Tags Twitter -->
+    <meta property="twitter:title" content="Front End - Coffee" />
+    <meta property="twitter:description" content="Restaurante e cafeteria" />
+    <meta property="twitter:image" content="" />
+
+    <!-- Search Console Google -->
+    <meta name="google-site-verification" content="" />
+
+    <!-- Hotjar Tracking Code for domain.com.br -->
+
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    <title>Front End Coffe</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="header" role="banner">
+      <a title="Coffee" href="" class="logo"><i class="fas fa-coffee"></i>Coffee.</a>
+
+      <nav role="navigation" aria-level="main-navigation" id="navbar" class="navbar">
+        <a title="Home" role="menu-item" data-target="header">Home</a>
+        <a title="Sobre" role="menu-item" data-target="about">Sobre</a>
+        <a title="Pratos" role="menu-item" data-target="dishes">Pratos</a>
+        <a title="Galeria" role="menu-item" data-target="gallery">Galeria</a>
+        <a title="Menu" role="menu-item" data-target="menu">Menu</a>
+        <a title="Pedido" role="menu-item" data-target="order">Pedido</a>
+        <a title="Blog" role="menu-item" data-target="blog">Blog</a>
+      </nav>
+
+      <div class="icon-container">
+        <i id="icon-bars" class="fas fa-bars"></i>
+      </div>
+    </header>
+    <!-- / HEADER -->
+
+    <main role="main">
+      <!-- BANNER -->
+      <section aria-label="Slide de produtos principal" class="banner">
+        <div class="swiper banner-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide" style="background: url(./assets/img/home-slide-1.jpg) no-repeat">
+              <div class="content">
+                <span>Comida caseira</span>
+                <h2>Comida</h2>
+                <h2>Deliciosa</h2>
+                <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(./assets/img/home-slide-2.jpg) no-repeat">
+              <div class="content">
+                <span>Comida caseira</span>
+                <h2>Comida</h2>
+                <h2>Deliciosa</h2>
+                <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(./assets/img/home-slide-3.jpg) no-repeat">
+              <div class="content">
+                <span>Comida caseira</span>
+                <h2>Comida</h2>
+                <h2>Deliciosa</h2>
+                <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- / BANNER -->
+
+      <!-- ABOUT -->
+      <section aria-label="Seção sobre nós" id="about" class="about">
+        <div class="container">
+          <img src="./assets/img/about-img.png" alt="Sobre nós" />
+
+          <div class="content">
+            <h3>Bem-Vindo ao Nosso Restaurante</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit error nostrum obcaecati nemo, ex sunt
+              vero assumenda porro autem possimus voluptate deserunt, iste officia soluta tempora libero! Provident,
+              reiciendis consequatur.
+            </p>
+
+            <a title="Leia Mais" href="" class="button">Leia Mais</a>
+
+            <div class="icon-container">
+              <div class="icon">
+                <img title="Ícone" src="./assets/img/about-icon-1.png" alt="Ícone" />
+                <span>Comida de Qualidade</span>
+              </div>
+
+              <div class="icon">
+                <img title="Ícone" src="./assets/img/about-icon-2.png" alt="Ícone" />
+                <span>Comida & Bebidas</span>
+              </div>
+
+              <div class="icon">
+                <img title="Ícone" src="./assets/img/about-icon-3.png" alt="Ícone" />
+                <span>Chef's Experts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / ABOUT -->
+
+      <!-- DISHES -->
+      <section aria-label="Nossos pratos" id="dishes" class="dishes">
+        <span class="sub-heading">Pratos Populares</span>
+        <h2 class="heading">Nossos Pratos Deliciosos</h2>
+
+        <div class="swiper dishes-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="content" data-name="food-1">
+                <img title="Pratos" src="./assets/img/food-img-1.png" alt="Pratos" />
+                <h3>Comida Caseira</h3>
+                <span>R$9.99</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide dishe">
+              <div class="content" data-name="food-2">
+                <img title="Pratos" src="./assets/img/food-img-2.png" alt="Pratos" />
+                <h3>Comida Caseira</h3>
+                <span>R$9.99</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide dishe">
+              <div class="content" data-name="food-3">
+                <img title="Pratos" src="./assets/img/food-img-3.png" alt="Pratos" />
+                <h3>Comida Caseira</h3>
+                <span>R$9.99</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide dishe">
+              <div class="content" data-name="food-4">
+                <img title="Pratos" src="./assets/img/food-img-4.png" alt="Pratos" />
+                <h3>Comida Caseira</h3>
+                <span>R$9.99</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide dishe">
+              <div class="content" data-name="food-5">
+                <img title="Pratos" src="./assets/img/food-img-5.png" alt="Pratos" />
+                <h3>Comida Caseira</h3>
+                <span>R$9.99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- / DISHES -->
+
+      <!-- PREVIEW DISHES -->
+      <div class="preview-dishes">
+        <i id="close-preview" class="fas fa-times"></i>
+
+        <div class="dishe" data-target="food-1">
+          <img title="Pratos" src="./assets/img/food-img-1.png" alt="Pratos" />
+          <h3>Comida Caseira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci explicabo vero optio nemo accusamus
+            officiis expedita esse soluta harum molestiae, ab ipsa totam non similique eveniet? Ipsam, quasi quia.
+          </p>
+          <span>R$9.99</span>
+          <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+        </div>
+
+        <div class="dishe" data-target="food-2">
+          <img title="Pratos" src="./assets/img/food-img-2.png" alt="Pratos" />
+          <h3>Comida Caseira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci explicabo vero optio nemo accusamus
+            officiis expedita esse soluta harum molestiae, ab ipsa totam non similique eveniet? Ipsam, quasi quia.
+          </p>
+          <span>R$9.99</span>
+          <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+        </div>
+
+        <div class="dishe" data-target="food-3">
+          <img title="Pratos" src="./assets/img/food-img-3.png" alt="Pratos" />
+          <h3>Comida Caseira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci explicabo vero optio nemo accusamus
+            officiis expedita esse soluta harum molestiae, ab ipsa totam non similique eveniet? Ipsam, quasi quia.
+          </p>
+          <span>R$9.99</span>
+          <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+        </div>
+
+        <div class="dishe" data-target="food-4">
+          <img title="Pratos" src="./assets/img/food-img-4.png" alt="Pratos" />
+          <h3>Comida Caseira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci explicabo vero optio nemo accusamus
+            officiis expedita esse soluta harum molestiae, ab ipsa totam non similique eveniet? Ipsam, quasi quia.
+          </p>
+          <span>R$9.99</span>
+          <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+        </div>
+
+        <div class="dishe" data-target="food-5">
+          <img title="Pratos" src="./assets/img/food-img-5.png" alt="Pratos" />
+          <h3>Comida Caseira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio adipisci explicabo vero optio nemo accusamus
+            officiis expedita esse soluta harum molestiae, ab ipsa totam non similique eveniet? Ipsam, quasi quia.
+          </p>
+          <span>R$9.99</span>
+          <a title="Comprar Agora" href="" class="button">Comprar Agora</a>
+        </div>
+      </div>
+      <!-- / PREVIEW DISHES -->
+
+      <!-- GALLERY -->
+      <section aria-label="Nossa galeria de pratos" id="gallery" class="gallery">
+        <span class="sub-heading">Nossa Galeria</span>
+        <h2 class="heading">Nossas Histórias não Contadas</h2>
+
+        <div class="box-container">
+          <a title="Galeria" href="./assets/img/food-galler-img-1.jpg" class="box">
+            <img title="Galeria" src="./assets/img/food-galler-img-1.jpg" alt="Galeria" />
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </a>
+
+          <a title="Galeria" href="./assets/img/food-galler-img-2.jpg" class="box">
+            <img title="Galeria" src="./assets/img/food-galler-img-2.jpg" alt="Galeria" />
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </a>
+
+          <a title="Galeria" href="./assets/img/food-galler-img-3.jpg" class="box">
+            <img title="Galeria" src="./assets/img/food-galler-img-3.jpg" alt="Galeria" />
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </a>
+
+          <a title="Galeria" href="./assets/img/food-galler-img-4.jpg" class="box">
+            <img title="Galeria" src="./assets/img/food-galler-img-4.jpg" alt="Galeria" />
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </a>
+
+          <a title="Galeria" href="./assets/img/food-galler-img-5.jpg" class="box">
+            <img title="Galeria" src="./assets/img/food-galler-img-5.jpg" alt="Galeria" />
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </a>
+
+          <a title="Galeria" href="./assets/img/food-galler-img-6.jpg" class="box">
+            <img title="Galeria" src="./assets/img/food-galler-img-6.jpg" alt="Galeria" />
+            <div class="overlay">
+              <i class="fas fa-plus"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- / GALLERY -->
+
+      <!-- MENU -->
+      <section aria-label="Nosso cardápio" id="menu" class="menu">
+        <span class="sub-heading">Nosso Menu</span>
+        <h2 class="heading">Nossos Pratos Populares</h2>
+
+        <div class="swiper menu-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <h3>Café da Manhã</h3>
+
+              <div class="card-container">
+                <article class="card">
+                  <div class="content">
+                    <h4>Café da Manhã</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Café da Manhã</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Café da Manhã</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Café da Manhã</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Café da Manhã</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Café da Manhã</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <h3>Almoço</h3>
+
+              <div class="card-container">
+                <article class="card">
+                  <div class="content">
+                    <h4>Almoço Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Almoço Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Almoço Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Almoço Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Almoço Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Almoço Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-slide slide">
+              <h3>Jantar</h3>
+
+              <div class="card-container">
+                <article class="card">
+                  <div class="content">
+                    <h4>Jantar Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Jantar Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Jantar Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Jantar Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Jantar Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+
+                <article class="card">
+                  <div class="content">
+                    <h4>Jantar Especial</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae suscipit consequatur inventore
+                      cupiditate dignissimos fugiat consectetur placeat, optio dolorem assumenda ullam, culpa nesciunt
+                      facere voluptatibus.
+                    </p>
+                  </div>
+
+                  <span>R$49.99</span>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- / MENU -->
+
+      <!-- ORDER -->
+      <section aria-label="Seção de realizar pedido" id="order" class="order">
+        <span class="sub-heading">Peça Agora</span>
+        <h2 class="heading">Entrega Rápida em Domícilio</h2>
+
+        <form>
+          <div class="box-container">
+            <div class="box">
+              <label for="name">Nome Completo</label>
+              <input class="input-box" type="text" name="name" id="name" placeholder="Digite seu nome" />
+            </div>
+
+            <div class="box">
+              <label for="phone">Telefone</label>
+              <input class="input-box" type="tel" name="phone" id="phone" placeholder="Digite seu telefone" />
+            </div>
+
+            <div class="box">
+              <label for="food">Comida</label>
+              <input class="input-box" type="text" name="food" id="food" placeholder="Digite sua comida" />
+            </div>
+
+            <div class="box">
+              <label for="qtd">Quantidade</label>
+              <input class="input-box" type="number" name="qtd" id="qtd" placeholder="Digite a quantidade" />
+            </div>
+
+            <div class="box">
+              <label for="add">Detalhes adicionais</label>
+              <input class="input-box" type="text" name="add" id="add" placeholder="Especificação opcional" />
+            </div>
+
+            <div class="box">
+              <label for="date">Data da entrega</label>
+              <input class="input-box" type="datetime-local" name="date" id="date" />
+            </div>
+
+            <div class="box">
+              <label for="address">Endereço</label>
+              <textarea class="input-box" name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="box">
+              <label>Nosso Endereço</label>
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.0487887331!2d-46.87549208615939!3d-23.681531471498023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1642946522321!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <input type="submit" value="Realizar Pedido" class="button" />
+        </form>
+      </section>
+      <!-- / ORDER -->
+
+      <!-- BLOG -->
+      <section aria-label="Postagens do nosso blog" id="blog" class="blog">
+        <span class="sub-heading">Nosso Blog</span>
+        <h2 class="heading">Nossas Últimas Postagens</h2>
+
+        <div class="swiper blog-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img src="./assets/img/blog-img-1.jpg" alt="Blog" />
+
+                <div class="content">
+                  <div class="head">
+                    <div class="date">
+                      <i class="fas fa-calendar"></i>
+                      <span>21 Maio, 2022</span>
+                    </div>
+
+                    <div class="author">
+                      <i class="fas fa-user"></i>
+                      <span>John Doe</span>
+                    </div>
+                  </div>
+
+                  <h3>Título do Post</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quis ut, quia obcaecati ad
+                    nihil illum voluptatem alias quidem maxime quos dolor provident. Laudantium obcaecati dignissimos
+                    architecto atque pariatur non.
+                  </p>
+                  <a title="Leia Mais" href="" class="button">Leia Mais</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img src="./assets/img/blog-img-2.jpg" alt="Blog" />
+
+                <div class="content">
+                  <div class="head">
+                    <div class="date">
+                      <i class="fas fa-calendar"></i>
+                      <span>21 Maio, 2022</span>
+                    </div>
+
+                    <div class="author">
+                      <i class="fas fa-user"></i>
+                      <span>John Doe</span>
+                    </div>
+                  </div>
+
+                  <h3>Título do Post</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quis ut, quia obcaecati ad
+                    nihil illum voluptatem alias quidem maxime quos dolor provident. Laudantium obcaecati dignissimos
+                    architecto atque pariatur non.
+                  </p>
+                  <a title="Leia Mais" href="" class="button">Leia Mais</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img src="./assets/img/blog-img-3.jpg" alt="Blog" />
+
+                <div class="content">
+                  <div class="head">
+                    <div class="date">
+                      <i class="fas fa-calendar"></i>
+                      <span>21 Maio, 2022</span>
+                    </div>
+
+                    <div class="author">
+                      <i class="fas fa-user"></i>
+                      <span>John Doe</span>
+                    </div>
+                  </div>
+
+                  <h3>Título do Post</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quis ut, quia obcaecati ad
+                    nihil illum voluptatem alias quidem maxime quos dolor provident. Laudantium obcaecati dignissimos
+                    architecto atque pariatur non.
+                  </p>
+                  <a title="Leia Mais" href="" class="button">Leia Mais</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img src="./assets/img/blog-img-4.jpg" alt="Blog" />
+
+                <div class="content">
+                  <div class="head">
+                    <div class="date">
+                      <i class="fas fa-calendar"></i>
+                      <span>21 Maio, 2022</span>
+                    </div>
+
+                    <div class="author">
+                      <i class="fas fa-user"></i>
+                      <span>John Doe</span>
+                    </div>
+                  </div>
+
+                  <h3>Título do Post</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quis ut, quia obcaecati ad
+                    nihil illum voluptatem alias quidem maxime quos dolor provident. Laudantium obcaecati dignissimos
+                    architecto atque pariatur non.
+                  </p>
+                  <a title="Leia Mais" href="" class="button">Leia Mais</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img src="./assets/img/blog-img-5.jpg" alt="Blog" />
+
+                <div class="content">
+                  <div class="head">
+                    <div class="date">
+                      <i class="fas fa-calendar"></i>
+                      <span>21 Maio, 2022</span>
+                    </div>
+
+                    <div class="author">
+                      <i class="fas fa-user"></i>
+                      <span>John Doe</span>
+                    </div>
+                  </div>
+
+                  <h3>Título do Post</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quis ut, quia obcaecati ad
+                    nihil illum voluptatem alias quidem maxime quos dolor provident. Laudantium obcaecati dignissimos
+                    architecto atque pariatur non.
+                  </p>
+                  <a title="Leia Mais" href="" class="button">Leia Mais</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide slide">
+              <article class="card">
+                <img src="./assets/img/blog-img-6.jpg" alt="Blog" />
+
+                <div class="content">
+                  <div class="head">
+                    <div class="date">
+                      <i class="fas fa-calendar"></i>
+                      <span>21 Maio, 2022</span>
+                    </div>
+
+                    <div class="author">
+                      <i class="fas fa-user"></i>
+                      <span>John Doe</span>
+                    </div>
+                  </div>
+
+                  <h3>Título do Post</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quis ut, quia obcaecati ad
+                    nihil illum voluptatem alias quidem maxime quos dolor provident. Laudantium obcaecati dignissimos
+                    architecto atque pariatur non.
+                  </p>
+                  <a title="Leia Mais" href="" class="button">Leia Mais</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- / BLOG -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer role="contentinfo" class="footer">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>Horário de Funcionamento</h3>
+          <span>07h às 22h</span>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Contato</h3>
+          <a title="WhatsApp" href="tel:(11) 9999-9999">(11) 9999-9999</a>
+          <a title="WhatsApp" href="tel:(11) 9999-9999">(11) 9999-9999</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>E-mail</h3>
+          <a title="E-mail" href="mailto:email@email.com">email@email.com</a>
+          <a title="E-mail" href="mailto:email@email.com">email@email.com</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-map"></i>
+          <h3>Localização</h3>
+          <span>São Paulo, SP - Brasil</span>
+        </div>
+      </div>
+
+      <div class="icon-container">
+        <a title="Facebook" href=""><i class="fab fa-facebook"></i></a>
+        <a title="Instagram" href=""><i class="fab fa-instagram"></i></a>
+        <a title="Twitter" href=""><i class="fab fa-twitter"></i></a>
+        <a title="LinkedIn" href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <!-- / FOOTER -->
+  </body>
+</html>

@@ -1,0 +1,63 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* BLOG */
+.blog {
+  background-color: $color-light-bg;
+
+  .slide {
+    background-color: $color-white;
+    border: $border;
+    box-shadow: $box-shadow;
+
+    .content {
+      padding: 2rem;
+
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        .date,
+        .author {
+          i {
+            color: $color-bege;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+          }
+
+          span {
+            font-size: 1.2rem;
+            color: $color-black;
+          }
+        }
+      }
+
+      h3 {
+        font-size: 2.4rem;
+        color: $color-black;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $color-light-black;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $color-light-black;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-bege;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 4rem;
+  }
+}

@@ -1,0 +1,117 @@
+/* VARIABLES */
+@import "../default/vars.scss";
+
+/* BANNER */
+.banner {
+  padding: 0;
+  width: 100vw;
+
+  .slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    z-index: 0;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: $color-dark-bg;
+      z-index: -1;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        transform: translateY(-4rem) scale(0);
+        opacity: 0;
+      }
+    }
+
+    .content {
+      display: none;
+      text-align: center;
+      width: 90%;
+      max-width: 80rem;
+
+      span {
+        font-size: 2rem;
+        color: $color-light;
+        animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.4s backwards;
+      }
+
+      h2 {
+        font-size: 12rem;
+        line-height: 1;
+        color: $color-white;
+        text-transform: uppercase;
+        animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.6s backwards;
+
+        &:last-of-type {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .button {
+        animation: fadeIn 0.4s cubic-bezier(0.54, 1.3, 0.63, 1.34) 0.8s backwards;
+      }
+    }
+  }
+
+  .swiper-slide-active.slide .content {
+    display: block;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: $color-white;
+    transition: 0.3s linear;
+
+    &::after {
+      font-size: 2rem;
+      color: $color-black;
+    }
+
+    &:hover {
+      background-color: $color-bege;
+
+      &::after {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    .slide .content {
+      h2 {
+        font-size: 8rem;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: initial;
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner .slide .content {
+    h2 {
+      font-size: 6rem;
+    }
+  }
+}

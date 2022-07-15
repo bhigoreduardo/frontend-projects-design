@@ -1,0 +1,45 @@
+/* VARIABLES */
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap");
+/* VARIABLES */
+/* FONT */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* SECTION COMPONENTS */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 4rem;
+  color: #222;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 2rem;
+  color: #cd9452;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #cd9452;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.button:hover {
+  letter-spacing: 0.1rem;
+}
+/*# sourceMappingURL=helpers.css.map */
