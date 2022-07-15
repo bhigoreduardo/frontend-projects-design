@@ -1,0 +1,62 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+  background-color: var(--bg-color);
+  position: relative;
+}
+.home .content {
+  padding-top: 2rem;
+}
+
+.home .content h1 {
+  font-size: 3rem;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.home .content p {
+  font-size: 1.6rem;
+  color: var(--light-color);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.home .cloud {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20rem;
+  background: url(../../assets/img/cloud.png) repeat-x;
+  animation: moveCloud 10s linear infinite;
+}
+
+.home .cloud.cloud-reverse {
+  opacity: 0.5;
+  animation-delay: 0.3s;
+  animation-direction: reverse;
+}
+
+@keyframes moveCloud {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home .cloud {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    grid-template-columns: 100%;
+  }
+}

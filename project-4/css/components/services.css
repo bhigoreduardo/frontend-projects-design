@@ -1,0 +1,39 @@
+.services .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .card-container .card {
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.services .card-container .card .image {
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.services .card-container .card h3 {
+  font-size: 1.8rem;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.services .card-container .card p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--light-color);
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .services .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

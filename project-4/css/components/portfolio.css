@@ -1,0 +1,79 @@
+.portfolio .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio .box-container .box {
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  height: 30rem;
+  overflow: hidden;
+}
+
+.portfolio .box-container .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  clip-path: circle(30% at 100% 0);
+  transition: 0.3s linear;
+}
+
+.portfolio .box-container .box:hover::before {
+  clip-path: circle(100%);
+}
+
+.portfolio .box-container .box span {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--black-color);
+  z-index: 2;
+}
+
+.portfolio .box-container .box img {
+  height: 100%;
+}
+
+.portfolio .box-container .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  transition: 0.5s linear;
+}
+
+.portfolio .box-container .box:hover .content {
+  top: 0;
+}
+
+.portfolio .box-container .box .content h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--black-color);
+}
+
+.portfolio .box-container .box .content p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

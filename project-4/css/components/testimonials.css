@@ -1,0 +1,62 @@
+.testimonials .box-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials .box-container .box {
+  flex: 1 1 35rem;
+  position: relative;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+
+.testimonials .box-container .box .user-info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials .box-container .box .user-info img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.testimonials .box-container .box .user-info .user-data span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+.testimonials .box-container .box .user-info .user-data .stars i {
+  font-size: 1rem;
+  color: var(--light-color);
+}
+
+.testimonials .box-container .box .fa-quote-right {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: var(--bg-color);
+}
+
+.testimonials .box-container .box p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

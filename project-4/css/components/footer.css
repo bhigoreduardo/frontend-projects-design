@@ -1,0 +1,42 @@
+.footer {
+  padding: 10rem 5%;
+  background-color: var(--bg-color);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer .box-container .box {
+  text-align: center;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black-color);
+  margin-bottom: 2rem;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--black-color);
+  transition: 0.5s linear;
+}
+
+.footer .box-container .box a:hover {
+  margin-left: 1rem;
+  color: var(--main-color);
+}
+
+.footer .box-container .box a:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer .box-container .box a i {
+  color: var(--main-color);
+  margin-right: 1rem;
+}

@@ -1,0 +1,53 @@
+/* SECTION COMPONENTS */
+section {
+  padding: 5rem 5%;
+}
+
+/* HEADING */
+.heading {
+  font-size: 2.4rem;
+  color: var(--black-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  border-radius: 0.5rem;
+}
+
+/* BUTTON */
+.button {
+  position: relative;
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: var(--main-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  z-index: 0;
+  margin-bottom: 2rem;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--black-color);
+  z-index: -1;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-out;
+}
+
+.button:hover::before {
+  width: 100%;
+  left: 0;
+}

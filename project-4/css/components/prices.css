@@ -1,0 +1,53 @@
+.prices .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prices .box-container .box {
+  flex: 1 1 30rem;
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.prices .box-container .box h3 {
+  font-size: 2.4rem;
+  color: var(--black-color);
+  margin-bottom: 2rem;
+}
+
+.prices .box-container .box img {
+  height: 15rem;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+.prices .box-container .box h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.prices .box-container .box h4 span {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.prices .box-container .box .description {
+  margin-bottom: 3rem;
+}
+
+.prices .box-container .box .description span {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--black-color);
+}
+
+.prices .box-container .box .description span:not(:last-child) {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,67 @@
+.about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .container .image {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.about .container .content h3 {
+  font-size: 2rem;
+  color: var(--black-color);
+  margin-bottom: 1rem;
+}
+
+.about .container .content p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.about .container .content .icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .container .content .icons .icon {
+  flex: 1 1 15rem;
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  border: var(--border);
+  text-align: center;
+}
+
+.about .container .content .icons .icon i {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.about .container .content .icons .icon span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 768px) {
+  .about .container {
+    grid-template-columns: 100%;
+  }
+}
