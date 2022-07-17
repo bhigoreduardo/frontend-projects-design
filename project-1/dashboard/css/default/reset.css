@@ -1,0 +1,80 @@
+/* VARIABLES */
+@import url(./vars.css);
+
+/* BASE */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body,
+html {
+  font-family: var(--font-family);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  appearance: none;
+  user-select: none;
+  overflow-x: hidden;
+  background-color: var(--color-background-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input[type="submit"] {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+textarea,
+input,
+select {
+  font-family: inherit;
+  border: none;
+  resize: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px auto 320px;
+  grid-gap: 20px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    grid-template-columns: 100px auto 320px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: auto 320px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

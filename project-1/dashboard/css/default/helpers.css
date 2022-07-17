@@ -1,0 +1,32 @@
+/* COLORS PRE-SETS */
+.primary {
+  color: var(--color-primary) !important;
+}
+
+.secondary {
+  color: var(--color-secondary) !important;
+}
+
+.info {
+  color: var(--color-info) !important;
+}
+
+.danger {
+  color: var(--color-danger) !important;
+}
+
+.recommend {
+  color: var(--color-recommend) !important;
+}
+
+.warning {
+  color: var(--color-warning) !important;
+}
+
+.success {
+  color: var(--color-success) !important;
+}
+
+.text-muted {
+  color: var(--color-neutral-400) !important;
+}

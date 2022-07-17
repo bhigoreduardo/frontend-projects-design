@@ -1,0 +1,14 @@
+/* RESET COMPONENTS */
+@import url(./default/reset.css);
+
+/* HELPERS COMPONENTS */
+@import url(./default/helpers.css);
+
+/* ASIDE COMPONENET */
+@import url(./components/aside.css);
+
+/* MAIN COMPONENT */
+@import url(./components/main.css);
+
+/* RIGHT MENU COMPONENT */
+@import url(./components/right-menu.css);
