@@ -1,0 +1,84 @@
+.search {
+  padding-top: 60px;
+}
+
+.search .content {
+  display: grid;
+  grid-template-columns: 290px auto;
+  grid-gap: 40px;
+}
+
+.search .content .sidebar .search-buttons {
+  margin-bottom: 24px;
+}
+
+.search .content .sidebar .search-buttons > :first-child {
+  margin-right: 12px;
+}
+
+.search .content .sidebar .search-buttons input {
+  display: none;
+}
+
+.search .content .sidebar .search-buttons input:checked ~ label {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.search .content .sidebar h5 {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-white);
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.search .content .sidebar .input-box {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  background-color: var(--color-white-040);
+  border-radius: var(--border-radius-base);
+  border: 1px solid var(--color-white-120);
+}
+
+.search .content .sidebar .input-box input,
+.search .content .sidebar .input-box select {
+  padding: 10px 18px;
+  width: 100%;
+  background-color: transparent;
+  color: var(--color-white);
+}
+
+.search .content .sidebar .checkbox-container {
+  max-height: 116px;
+  overflow-y: scroll;
+}
+
+.search .content .sidebar .checkbox-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.search .content .sidebar .checkbox-container::-webkit-scrollbar-thumb {
+  background-color: var(--color-white);
+}
+
+.search .content .sidebar .checkbox-container::-webkit-scrollbar-track {
+  background-color: var(--color-white-150);
+}
+
+.search .content .sidebar .checkbox-container .checkbox:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.search .content .sidebar .price-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search .content .sidebar .price-container .line {
+  width: 32px;
+  height: 1px;
+  background-color: var(--color-white);
+}

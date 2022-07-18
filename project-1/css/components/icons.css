@@ -20,7 +20,8 @@
 }
 
 .icons-menu .content .icons-container .icon img {
-  width: 80px;
+  /* width: 80px; */
+  width: 180px;
   margin-bottom: 30px;
 }
 

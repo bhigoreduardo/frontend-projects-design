@@ -31,5 +31,8 @@
 /* BLOG COMPONENT */
 @import url(./components/blog.css);
 
+/* SEARCH COMPONENT */
+@import url(./components/search.css);
+
 /* FOOTER COMPONENT */
 @import url(./components/footer.css);
